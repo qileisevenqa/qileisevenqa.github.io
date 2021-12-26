@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PythonAPI测试自动化框架发出HTTP请求-2 | MY TITLE</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-title" content="MY APPLE TITLE">
+  <meta name="theme-color" content="MY COLOR THEME">
+  <meta name="msapplication-navbutton-color" content="MY COLOR THEME">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="coverage" content="WorldWide">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="application-name" content="MY APP NAME">
+  <meta name="msapplication-TileColor" content="MY COLOR THEME">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-square70x70logo" content="/favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/favicon/ms-icon-310x310.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ktquez">
+  <meta property="fb:app_id" content="MY FACEBOOK APP ID">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MY SITE NAME">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="360">
+  <meta property="og:image:type" content="image/png">
+  <meta name="google-site-verification" content="MY VERIFICATION KEY">
+  <meta name="msvalidate.01" content="MY VERIFICATION KEY">
+  <meta name="yandex-verification" content="MY VERIFICATION KEY">
+  <link rel="publisher" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="/humans.txt">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff5733">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/" hreflang="en">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt-br">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/es/" hreflang="es">
+  <link rel="preconnect" href="https://connect.facebook.net/">
+  <link rel="preconnect" href="https://platform.twitter.com/">
+  <link rel="preconnect" href="https://widget.sndcdn.com/">
+  <link rel="preconnect" href="https://api-widget.soundcloud.com/">
+  <link rel="preconnect" href="https://www.youtube.com/">
+  <link rel="preconnect" href="https://scrimba.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://c.disquscdn.com/">
+  <link rel="preconnect" href="https://disqus.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com/">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+    <meta property="og:image" content="/autores/my.jpeg"><meta name="twitter:image" content="/autores/my.jpeg">
+    <link rel="preload" href="/assets/css/0.styles.eef050b4.css" as="style"><link rel="preload" href="/assets/js/app.152cc865.js" as="script"><link rel="preload" href="/assets/js/12.22dc2157.js" as="script"><link rel="preload" href="/assets/js/3.72f65101.js" as="script"><link rel="preload" href="/assets/js/11.9ce5aa47.js" as="script"><link rel="preload" href="/assets/js/10.48854263.js" as="script"><link rel="preload" href="/assets/js/15.f87ba54c.js" as="script"><link rel="preload" href="/assets/js/2.8ffb7ac8.js" as="script"><link rel="preload" href="/assets/js/5.69a15828.js" as="script"><link rel="preload" href="/assets/js/6.ca7c455c.js" as="script"><link rel="preload" href="/assets/js/16.7d53733f.js" as="script"><link rel="preload" href="/assets/js/68.128f735a.js" as="script"><link rel="preload" href="/assets/js/7.cc0a13af.js" as="script"><link rel="preload" href="/assets/js/9.bc7d0b68.js" as="script"><link rel="preload" href="/assets/js/13.949cbefc.js" as="script"><link rel="preload" href="/assets/js/4.98ee0f72.js" as="script"><link rel="prefetch" href="/assets/js/1.049577ca.js"><link rel="prefetch" href="/assets/js/100.89072a8f.js"><link rel="prefetch" href="/assets/js/101.6df01df9.js"><link rel="prefetch" href="/assets/js/102.8b3778fc.js"><link rel="prefetch" href="/assets/js/103.cf80daa0.js"><link rel="prefetch" href="/assets/js/104.7f5cfbc5.js"><link rel="prefetch" href="/assets/js/105.1a41d040.js"><link rel="prefetch" href="/assets/js/106.894aaceb.js"><link rel="prefetch" href="/assets/js/107.b1cee0a0.js"><link rel="prefetch" href="/assets/js/108.e43497ce.js"><link rel="prefetch" href="/assets/js/109.760e3a23.js"><link rel="prefetch" href="/assets/js/110.8b1a1236.js"><link rel="prefetch" href="/assets/js/111.189aaa3c.js"><link rel="prefetch" href="/assets/js/112.031d8a39.js"><link rel="prefetch" href="/assets/js/113.2a90f4bc.js"><link rel="prefetch" href="/assets/js/114.3e29483f.js"><link rel="prefetch" href="/assets/js/115.7245418c.js"><link rel="prefetch" href="/assets/js/116.c258bb71.js"><link rel="prefetch" href="/assets/js/117.f9999e64.js"><link rel="prefetch" href="/assets/js/118.72859e3d.js"><link rel="prefetch" href="/assets/js/119.c6c61956.js"><link rel="prefetch" href="/assets/js/120.5771f6ae.js"><link rel="prefetch" href="/assets/js/121.f4fb9923.js"><link rel="prefetch" href="/assets/js/122.bc231bfa.js"><link rel="prefetch" href="/assets/js/123.158cf659.js"><link rel="prefetch" href="/assets/js/124.02ee2194.js"><link rel="prefetch" href="/assets/js/125.4cf4e2c9.js"><link rel="prefetch" href="/assets/js/126.b1eb1604.js"><link rel="prefetch" href="/assets/js/127.42ad2b47.js"><link rel="prefetch" href="/assets/js/128.b4ee2e7f.js"><link rel="prefetch" href="/assets/js/129.635692e9.js"><link rel="prefetch" href="/assets/js/130.3ccb6e65.js"><link rel="prefetch" href="/assets/js/131.edf8785d.js"><link rel="prefetch" href="/assets/js/132.09cf4f81.js"><link rel="prefetch" href="/assets/js/133.922daf3e.js"><link rel="prefetch" href="/assets/js/134.ff091517.js"><link rel="prefetch" href="/assets/js/135.41b865a7.js"><link rel="prefetch" href="/assets/js/136.b47439aa.js"><link rel="prefetch" href="/assets/js/137.ba3b5abe.js"><link rel="prefetch" href="/assets/js/138.a73c97ff.js"><link rel="prefetch" href="/assets/js/139.991c72ef.js"><link rel="prefetch" href="/assets/js/14.74d39783.js"><link rel="prefetch" href="/assets/js/140.6882aef7.js"><link rel="prefetch" href="/assets/js/141.4ca11626.js"><link rel="prefetch" href="/assets/js/142.1855583f.js"><link rel="prefetch" href="/assets/js/143.bb5a5eef.js"><link rel="prefetch" href="/assets/js/144.f93cd7db.js"><link rel="prefetch" href="/assets/js/145.e799e1fe.js"><link rel="prefetch" href="/assets/js/146.289485e5.js"><link rel="prefetch" href="/assets/js/147.116d14ca.js"><link rel="prefetch" href="/assets/js/148.df20648f.js"><link rel="prefetch" href="/assets/js/149.25a21e39.js"><link rel="prefetch" href="/assets/js/150.181ec5c4.js"><link rel="prefetch" href="/assets/js/151.ca39578e.js"><link rel="prefetch" href="/assets/js/152.fb478ca0.js"><link rel="prefetch" href="/assets/js/153.a2e13ef0.js"><link rel="prefetch" href="/assets/js/154.1d947248.js"><link rel="prefetch" href="/assets/js/155.b7dd0ad0.js"><link rel="prefetch" href="/assets/js/156.29d62a38.js"><link rel="prefetch" href="/assets/js/157.d2e78a0e.js"><link rel="prefetch" href="/assets/js/158.4d8fded2.js"><link rel="prefetch" href="/assets/js/159.b75edb71.js"><link rel="prefetch" href="/assets/js/160.95457737.js"><link rel="prefetch" href="/assets/js/161.718d2a68.js"><link rel="prefetch" href="/assets/js/162.9224c1f2.js"><link rel="prefetch" href="/assets/js/163.dbfa40ee.js"><link rel="prefetch" href="/assets/js/164.bd7ad716.js"><link rel="prefetch" href="/assets/js/165.c37947ac.js"><link rel="prefetch" href="/assets/js/166.ae3cbd4d.js"><link rel="prefetch" href="/assets/js/167.9674bc97.js"><link rel="prefetch" href="/assets/js/168.224f67b1.js"><link rel="prefetch" href="/assets/js/169.60b0add8.js"><link rel="prefetch" href="/assets/js/17.4bd7bfb7.js"><link rel="prefetch" href="/assets/js/170.04a5d8a2.js"><link rel="prefetch" href="/assets/js/171.3d24c124.js"><link rel="prefetch" href="/assets/js/172.70f1deef.js"><link rel="prefetch" href="/assets/js/173.8aac40d5.js"><link rel="prefetch" href="/assets/js/174.100043f1.js"><link rel="prefetch" href="/assets/js/175.9bce1f40.js"><link rel="prefetch" href="/assets/js/176.f57b1ec2.js"><link rel="prefetch" href="/assets/js/177.bd11609d.js"><link rel="prefetch" href="/assets/js/178.6cde88fe.js"><link rel="prefetch" href="/assets/js/179.c6556c3e.js"><link rel="prefetch" href="/assets/js/18.364a1c7a.js"><link rel="prefetch" href="/assets/js/180.8f661fe6.js"><link rel="prefetch" href="/assets/js/19.1087666b.js"><link rel="prefetch" href="/assets/js/20.32414a86.js"><link rel="prefetch" href="/assets/js/21.df70e842.js"><link rel="prefetch" href="/assets/js/22.1a7bb308.js"><link rel="prefetch" href="/assets/js/23.cb78472b.js"><link rel="prefetch" href="/assets/js/24.50e9f515.js"><link rel="prefetch" href="/assets/js/25.46b3ab9e.js"><link rel="prefetch" href="/assets/js/26.a300c330.js"><link rel="prefetch" href="/assets/js/27.aa95a34a.js"><link rel="prefetch" href="/assets/js/28.1379fba5.js"><link rel="prefetch" href="/assets/js/29.ed2fd094.js"><link rel="prefetch" href="/assets/js/30.1cf5c075.js"><link rel="prefetch" href="/assets/js/31.707ee8c1.js"><link rel="prefetch" href="/assets/js/32.6cb23a99.js"><link rel="prefetch" href="/assets/js/33.f6aa3340.js"><link rel="prefetch" href="/assets/js/34.274ba06d.js"><link rel="prefetch" href="/assets/js/35.a4abf573.js"><link rel="prefetch" href="/assets/js/36.b0bb1a8c.js"><link rel="prefetch" href="/assets/js/37.a76af20e.js"><link rel="prefetch" href="/assets/js/38.9cfafe24.js"><link rel="prefetch" href="/assets/js/39.2cfff7e8.js"><link rel="prefetch" href="/assets/js/40.229f5d3d.js"><link rel="prefetch" href="/assets/js/41.f09ea6ba.js"><link rel="prefetch" href="/assets/js/42.b1c288ed.js"><link rel="prefetch" href="/assets/js/43.399440ed.js"><link rel="prefetch" href="/assets/js/44.2353b402.js"><link rel="prefetch" href="/assets/js/45.c46ff05f.js"><link rel="prefetch" href="/assets/js/46.acb62d8d.js"><link rel="prefetch" href="/assets/js/47.28fa9043.js"><link rel="prefetch" href="/assets/js/48.2e4aa712.js"><link rel="prefetch" href="/assets/js/49.c5b98afb.js"><link rel="prefetch" href="/assets/js/50.efed2333.js"><link rel="prefetch" href="/assets/js/51.d0145f09.js"><link rel="prefetch" href="/assets/js/52.51d6927e.js"><link rel="prefetch" href="/assets/js/53.1504af38.js"><link rel="prefetch" href="/assets/js/54.d4e577ae.js"><link rel="prefetch" href="/assets/js/55.1f9c27b0.js"><link rel="prefetch" href="/assets/js/56.8dd81906.js"><link rel="prefetch" href="/assets/js/57.235aa13f.js"><link rel="prefetch" href="/assets/js/58.86ab6cec.js"><link rel="prefetch" href="/assets/js/59.b35b7555.js"><link rel="prefetch" href="/assets/js/60.d23c6e8e.js"><link rel="prefetch" href="/assets/js/61.6ed29488.js"><link rel="prefetch" href="/assets/js/62.b06ce067.js"><link rel="prefetch" href="/assets/js/63.53c47f8c.js"><link rel="prefetch" href="/assets/js/64.a07662b1.js"><link rel="prefetch" href="/assets/js/65.666dc5d8.js"><link rel="prefetch" href="/assets/js/66.41eed6c1.js"><link rel="prefetch" href="/assets/js/67.0884e779.js"><link rel="prefetch" href="/assets/js/69.09d1f95e.js"><link rel="prefetch" href="/assets/js/70.e94b7664.js"><link rel="prefetch" href="/assets/js/71.445a8fb0.js"><link rel="prefetch" href="/assets/js/72.f8d8cccd.js"><link rel="prefetch" href="/assets/js/73.85b678ef.js"><link rel="prefetch" href="/assets/js/74.a5352a2b.js"><link rel="prefetch" href="/assets/js/75.477396c4.js"><link rel="prefetch" href="/assets/js/76.98b2b77d.js"><link rel="prefetch" href="/assets/js/77.53678b71.js"><link rel="prefetch" href="/assets/js/78.14c0b510.js"><link rel="prefetch" href="/assets/js/79.9c97255b.js"><link rel="prefetch" href="/assets/js/80.ac99d13c.js"><link rel="prefetch" href="/assets/js/81.96d4efe5.js"><link rel="prefetch" href="/assets/js/82.9d7ee1d5.js"><link rel="prefetch" href="/assets/js/83.a396d08d.js"><link rel="prefetch" href="/assets/js/84.72e01c42.js"><link rel="prefetch" href="/assets/js/85.7548261b.js"><link rel="prefetch" href="/assets/js/86.bf4bb84b.js"><link rel="prefetch" href="/assets/js/87.94fd6a22.js"><link rel="prefetch" href="/assets/js/88.c9f369c3.js"><link rel="prefetch" href="/assets/js/89.3cae8c82.js"><link rel="prefetch" href="/assets/js/90.cda0ddf8.js"><link rel="prefetch" href="/assets/js/91.8596c56d.js"><link rel="prefetch" href="/assets/js/92.78612bf9.js"><link rel="prefetch" href="/assets/js/93.a5f9769b.js"><link rel="prefetch" href="/assets/js/94.65ab03b6.js"><link rel="prefetch" href="/assets/js/95.3bf11943.js"><link rel="prefetch" href="/assets/js/96.c6f01a4e.js"><link rel="prefetch" href="/assets/js/97.da276862.js"><link rel="prefetch" href="/assets/js/98.76da3e3c.js"><link rel="prefetch" href="/assets/js/99.653d9f9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eef050b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div itemscope="itemscope" itemtype="https://schema.org/WebPage" class="layout-main"><meta itemprop="name" content="MY TITLE"> <meta itemprop="alternateName" content="MY TITLE"> <meta itemprop="url" content="https://MY_DOMAIN.COM"> <nav aria-label="Navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="container nav-mobile" style="display:none;"><span itemprop="headline" class="nav-mobile__title">传送门</span> <ul class="nav-mobile__list"><li class="nav-mobile__item"><a href="/about/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">关于我</span></a></li><li class="nav-mobile__item"><a href="/categories/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">类别</span></a></li><li class="nav-mobile__item"><a href="/contact/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">联系我</span></a></li><li class="nav-mobile__item"><a href="/categories/Agile_QA.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Agile QA</span></a></li><li class="nav-mobile__item"><a href="/categories/Quality.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Quality</span></a></li><li class="nav-mobile__item"><a href="/categories/automation_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">automation test</span></a></li><li class="nav-mobile__item"><a href="/categories/performance_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">performance test</span></a></li><li class="nav-mobile__item"><a href="/categories/vuejs.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Vue.js</span></a></li></ul></nav> <div class="container-fluid wrapper-body__nm"><header itemscope="itemscope" itemtype="https://schema.org/Organization" class="header"><!----> <div class="row header-top"><div class="column xs-33 sm-20"><div class="hamburguer header-top__hamburguer"><div class="hamburguer__wrapper"><span class="hamburguer__line"></span> <span class="hamburguer__line"></span> <span class="hamburguer__line"></span></div></div> <!----></div> <div class="column xs-33 sm-60"><div class="header__logo"><a href="/" itemprop="url" class="header-top-logo__link router-link-active"><img itemprop="logo" src="/ktquez-play-logo.png" srcset="/ktquez-play-logo.png 1x, /ktquez-play-logo@2x.png 2x" alt="Logo in 3 colors in play format"></a></div> <meta itemprop="name" content="MY TITLE"> <meta itemprop="sameAs" content="https://www.github.com/qileilove"></div> <div class="column xs-33 sm-20"><div class="search header-top__search"><!----> <span class="icon search__icon">search</span></div> <div class="switch-bw header-top__toggle"><span class="switch-bw__text">
+    打开黑夜模式，体验黑夜的魅力
+  </span> <label for="switch-bw" class="switch-bw__label"><input type="checkbox" id="switch-bw" name="switch-bw" aria-labelledby="switch-bw-text" class="switch-bw__input"> <span class="switch-bw__ball"></span> <span id="switch-bw-text" hidden="hidden">switch to black or white</span></label></div></div></div></header> <main id="main" itemscope="itemscope" itemtype="https://schema.org/Blog" class="main-page"><div><a href="#main" class="vue-skip-to">跳过主内容</a> <div><div class="page page__full row justify-right"><article itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting" class="column xs-100 page__full__box box-default"><meta itemprop="mainEntityOfPage" content="/posts/202012/PythonAPI%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6%E5%8F%91%E5%87%BAHTTP%E8%AF%B7%E6%B1%82-2.html"> <header class="page-header page__full-header"><button type="button" class="ui-button reset-button back-button"><span class="icon back-button__icon icon--arrow">arrow</span> <span class="back-button__text">返回</span></button> <div class="page-header__meta"><time datetime="Tue Dec 15 2020 09:00:00 GMT+0800 (China Standard Time)" itemprop="datePublished" class="text">
+                
+            </time> <meta itemprop="dateModified" content="currentPost.updated_at"> <!----></div> <h1 itemprop="name headline" class="page-header__title">PythonAPI测试自动化框架发出HTTP请求-2</h1> <div class="page-header-cat"><nav class="page-header-cat__nav"><ul class="page-header-cat__list"><li class="page-header-cat__item"><a href="/categories/Agile_QA.html" itemprop="keywords" class="page-header-cat__link meta-text">
+                  Agile QA
+                </a></li></ul></nav></div> <!----></header> <div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject" class="post-cover"><picture> <img itemprop="url" src="/images/posts/2020/12/82-2.png" class="post-cover__image cover"></picture></div> <!----> <section class="page-content page__full-content"><div class="row"><div class="column no-pad-l sm-50 post-share"><div class="observer"><!----> <!----> <!----></div></div> <!----></div> <div class="row"><div class="column no-pad-l md-75 xl-67 post-content"><div class="post-content__box-player"><!----></div> <div class="post-content__excerpt"><!----></div> <div class="post-content__table-contents"><div class="table-contents"><h3 id="table-of-content" class="table-contents__title">文本</h3> <nav><ol class="table-contents__list"><!----><!----><!----><!----></ol></nav></div></div> <div itemprop="articleBody"><div class="content custom"><h1 id="pythonapi测试自动化框架发出http请求-2"><a href="#pythonapi测试自动化框架发出http请求-2" aria-hidden="true" class="header-anchor">#</a> PythonAPI测试自动化框架发出HTTP请求-2</h1> <p>Python API测试自动化框架(第2部分)发出HTTP请求
+了解被测API
+让我们更好地了解本教程中将使用的API。
+我们将使用people-api，这是一组使用Python Flask，SQLAlchemy开发的CRUD HTTP操作，并使用sqlite作为数据库，并表示具有名字，姓氏和ID的人员列表
+要从github设置克隆people-api存储库，然后通过运行以下命令激活pipenv：
+皮壳
+通过执行以下命令，确保所有依赖项都已安装在pipenv中：
+pipenv安装
+完成后，通过执行以下命令来初始化数据库
+python build_database.py
+这将为本地sqlite数据库添加一些虚拟记录
+最后，通过执行并确保该服务在测试过程中保持运行，在本地启动HTTP服务
+python server.py
+从日志中我们可以看到本地服务已启动，您还将看到对服务器的任何请求的日志</p> <div class="language- extra-class"><pre class="language-text"><code>* Serving Flask app &quot;config&quot; (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 105-008-664
+
+</code></pre></div><p>让我们导航至http://0.0.0.0:5000以查看该应用程序，
+注意：要查看此API的规范，我们可以导航至http://0.0.0.0:5000/api/ui/#/
+如您所见，此API支持基本的CRUD操作（CREATE，READ，UPDATE，DELETE）
+https://automationhacks.io/assets/images/2020/11/swagger.png
+如果您想处理这些请求，我还在此回购协议中的postman文件夹下包括了一个postman集合，其中已经设置了所有这些基本操作。
+API支持创建人员，更新人员，删除人员并能够读取数据库中的一个或多个用户。 在编写测试时，我们将看到这些操作。
+第一次测试，通过GET API读取
+让我们看看如何创建一个基本测试以使用已经导入的请求模块通过python发出此HTTP请求
+该API的curl为：
+curl --location --request GET 'http://0.0.0.0:5000//api/people' <br>
+--header 'Accept: application/json'
+下面的代码片段连接了一个基本的HTTP GET请求，然后断言该服务向我们返回了200个状态代码，并且返回的人员列表中有kent。
+注意，我们使用来自assertpy模块的assert_that来进行流畅的断言，来自这些断言的失败消息非常可读，我们将在以后的文章中讨论更多有关此的消息。 请确保使用pipenv install assertpy将其安装在virtualenv中
+如果您想处理这些请求，我还在此回购协议中的postman文件夹下包括了一个postman集合，其中已经设置了所有这些基本操作。
+API支持创建人员，更新人员，删除人员并能够读取数据库中的一个或多个用户。 在编写测试时，我们将看到这些操作。
+第一次测试，通过GET API读取
+让我们看看如何创建一个基本测试以使用已经导入的请求模块通过python发出此HTTP请求
+该API的curl为：
+curl --location --request GET'http://0.0.0.0:5000//api/people'<br>
+--header'接受：application / json'
+下面的代码片段连接了一个基本的HTTP GET请求，然后断言该服务向我们返回了200个状态代码，并且返回的人员列表中有kent。
+注意，我们使用来自assertpy模块的assert_that来进行流畅的断言，来自这些断言的失败消息非常可读，我们将在以后的文章中讨论更多有关此的消息。 请确保使用pipenv install assertpy将其安装在virtualenv中</p> <div class="language- extra-class"><pre class="language-text"><code>import requests
+from assertpy.assertpy import assert_that
+from config import BASE_URI
+
+def test_read_all_has_kent():
+    # We use requests.get() with url to make a get request
+    response = requests.get(BASE_URI)
+    # response from requests has many useful properties
+    # we can assert on the response status code
+    assert_that(response.status_code).is_equal_to(requests.codes.ok)
+    # We can get python dict as response by using .json() method
+    response_text = response.json()
+    first_names = [people['fname'] for people in response_text]
+    assert_that(first_names).contains('Kent')
+
+</code></pre></div><p>在上面，我们使用BASE_URI变量来获取要使用的基本api URL。 它存储在config.py文件中，如下所示：
+BASE_URI ='http://0.0.0.0:5000/api/people'
+使用POST方法创建人
+好了，现在我们已经处理了GET API的基本情况，让我们看看如何发出POST请求。
+通常在Rest API中，当您需要创建资源时，可以使用POST方法
+下面是发出请求的cURL，我们的python代码将提供相同的标头，正文和URL来满足请求</p> <div class="language- extra-class"><pre class="language-text"><code>curl --location --request POST 'http://0.0.0.0:5000//api/people' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--data-raw '{
+   &quot;fname&quot;: &quot;TAU&quot;,
+   &quot;lname&quot;: &quot;User&quot;
+ }'
+
+</code></pre></div><p>这是我们要自动化的完整流程：
+在数据库中创建一个新人
+使用GET API验证是否存在新创建的用户
+进行过滤以查找创建的数据是否存在于系统中的所有用户中</p> <div class="language- extra-class"><pre class="language-text"><code>def test_new_person_can_be_added():
+    unique_last_name = create_new_person()
+
+    # After user is created, we read all the users and then use list comprehension to find if the
+    # created user is present in the response list
+    peoples = requests.get(BASE_URI).json()
+    is_new_user_created = search_created_user_in(peoples, unique_last_name)
+    assert_that(is_new_user_created).is_not_empty()
+
+def create_new_person():
+    # Ensure a user with a unique last name is created everytime the test runs
+    # Note: json.dumps() is used to convert python dict to json string
+    unique_last_name = f'User {str(uuid4())}'
+    payload = dumps({
+        'fname': 'New',
+        'lname': unique_last_name
+    })
+
+    # Setting default headers to show that the client accepts json
+    # And will send json in the headers
+    headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+
+    # We use requests.post method with keyword params to make the request more readable
+    response = requests.post(url=BASE_URI, data=payload, headers=headers)
+    assert_that(response.status_code, description='Person not created').is_equal_to(requests.codes.no_content)
+    return unique_last_name
+
+def search_created_user_in(peoples, last_name):
+    return [person for person in peoples if person['lname'] == last_name]
+
+
+</code></pre></div><p>在这里Ln 2：调用create_new_person（），在此我们首先创建要作为请求的一部分传递的正文
+请注意，在Ln 14上，我们使用json模块中的dumps（）方法将python dict转换为json字符串（序列化），并使用str（uuid4（））在Ln 13上获得唯一的姓氏，以确保我们没有冲突的数据 在每次测试中
+最后，我们使用发出POST请求
+响应= request.post（url = BASE_URI，data = payload，headers = headers）
+然后使用search_created_user_in（）方法查看数据库中是否存在新创建的用户
+使用DELETE方法删除一个人
+我们将如何删除方法？
+在此API中，我们可以通过传入person_id来删除人员，在尝试删除操作之前创建自己的测试数据而不是使用任何现有数据始终是一个好习惯，因为这可能会导致不确定性测试
+所以这是流程：
+创建一个新人
+使用读取的API获取人员ID
+点击删除端点并断言
+由于我们已经有创建和读取用户的方法，因此剩下的唯一事情就是通过确保在API路径参数中传递person_id来实现DELETE操作。我们使用出色的f字符串创建我们的URL，然后使用 requests.delete（）方法。</p> <div class="language- extra-class"><pre class="language-text"><code>def test_created_person_can_be_deleted():
+    persons_last_name = create_new_person()
+
+    peoples = requests.get(BASE_URI).json()
+    newly_created_user = search_created_user_in(peoples, persons_last_name)[0]
+
+    delete_url = f'{BASE_URI}/{newly_created_user[&quot;person_id&quot;]}'
+    response = requests.delete(delete_url)
+    assert_that(response.status_code).is_equal_to(requests.codes.ok)
+</code></pre></div><p>奖金
+请注意，在断言中我们没有为状态代码指定数值，请求提供了一个查找字典，您可以在其中轻松使用语法等可读英语指定代码，这绝对比每次解析X在MDN上的含义都更好-Mozilla开发人员网络 😉
+换句话说，我们可以将其写成request.codes.ok而不是200
+结论
+这只是图书馆可以进行的请求的一种体验。 有关其提供的所有功能的更多详细信息，请阅读requests文档，希望这对您如何使用请求进行HTTP调用有一个好主意。 在下一篇文章中，我们将讨论有关使用JSON / XML数据类型和断言的更多信息。 敬请关注。 ⏰
+这是从MDN读取的Content-Type和Accept标头
+如果您认为这篇文章很有用，请与朋友或同事分享，如果您有想法，我很乐意在Twitter或评论中聊天。 直到下一次。 快乐的测试和编码。</p> <h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3> <p>石头 磊哥 seven 随便叫</p> <h3 id="company"><a href="#company" aria-hidden="true" class="header-anchor">#</a> company</h3> <p>thoughtworks（离职了。。。。）</p> <p>大家好，本人不才，目前依旧混迹于thoughtworks，做着一名看起来像全栈的QA，兴趣爱好前端，目前是thoughtworks 西安QA社区的leader，如果有兴趣分享话题，或者想加入tw，可以找我</p> <h3 id="roles"><a href="#roles" aria-hidden="true" class="header-anchor">#</a> roles</h3> <p>QA（营生） dev（front-end dev 兴趣爱好）</p> <h3 id="联系方式"><a href="#联系方式" aria-hidden="true" class="header-anchor">#</a> 联系方式</h3> <p>如果想转载或者高薪挖我 请直接联系我 哈哈</p> <h4 id="wechat"><a href="#wechat" aria-hidden="true" class="header-anchor">#</a> wechat:</h4> <p>qileiwangnan</p> <h4 id="email"><a href="#email" aria-hidden="true" class="header-anchor">#</a> email:</h4> <p>qileilove@gmail.com</p></div></div></div> <div class="column no-pad-r sm-25 xl-33 xsNone smNone post-sidebar"><div class="bizu box-default post-sidebar__bizu bizu--vertical"><div class="bizu-image"><span class="bizu-close">×</span> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener"><img src="/general/web-development.png" alt="Illustration of a user studying online" class="bizu-image__image"></a></div> <div class="bizu-info"><a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__text">
+      The most complete course of Vue.js from Udemy, including Vuex and Vue-router with a promotional price not to be missed.
+    </a> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__by">
+      udemy.com
+    </a></div></div></div> <aside class="column xs-100"><hr class="divider"> <div><div class="observer"><!----> <!----> <!----></div></div> <hr class="divider"> <section class="post-content__disqus"><h3>想给我说点什么</h3> <!----></section></aside></div></section></article></div> <!----> <aside class="container main"></aside></div> <!----> <div class="elevator"><a class="elevator__link"><span class="icon elevator__icon">greaterthan</span></a></div> <!----></div></main> <footer class="footer"><div class="footer-box1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 161" class="footer-box__shape"><path d="M-11.925-4809v-154.746c40.454,19.75,273.683,130.936,420.544,142.612,161.25,12.821,339.978-42.709,521.543-86.3,169.82-40.769,395.43,29.2,423.912,38.429v60Z" transform="translate(11.926 4970)"></path></svg></div> <div class="footer-box2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 246" class="footer-box__shape"><path d="M-1505.5-4725.5v-238.1c8.149-3.133,18.138-5.059,29.672-5.9h30.954c201.21,11.667,696.6,224.535,855.572,236.458,205.129,15.385,287.179-164.1,432.047-175.625a42.381,42.381,0,0,1,16.756,1.857V-4725.5Z" transform="translate(1506 4971)"></path></svg> <ul class="footer-social__list"><li class="footer-social__item"><a href="https://www.github.com/qileilove" target="_blank" rel="noopener external" title="Follow us on Facebook"><span class="icon footer-social__icon">github</span></a></li></ul> <div class="footer-newsletter"><!----></div></div> <section class="footer-box3"><div class="row"><div class="column sm-50 footer-card"><div class="observer"><div class="spinner observer__spinner"><div class="double-bounce1"></div> <div class="double-bounce2"></div></div> <!----> <!----></div></div> <div class="column sm-50 footer-nav"><div class="row justify-right"><div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--1"><h2 class="meta-text title">Qi Lei的blog</h2> <nav class="footer-nav1"><ul><li class="footer-nav1__item"><a href="/about/">关于我</a> <!----></li><li class="footer-nav1__item"><a href="/categories/">类别</a> <!----></li><li class="footer-nav1__item"><a href="/contact/">联系我</a> <!----></li></ul></nav></div> <div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--2"><h2 class="meta-text title">社交群</h2> <nav class="footer-nav2"><ul><li class="footer-nav2__item"><!----> <!----></li></ul></nav></div></div></div> <div class="column sm-100 footer-copy">2019 © Qi Lei - 
+        <a href="https://vuepress.vuejs.org/" rel="noopener" target="_blank">
+          MADE WITH VUEPRESS
+        </a></div></div> <span class="shapes shapes--circle" style="left: 3%; top: -20%"></span> <span class="shapes shapes--primary shapes--color3" style="left: 30%; top: -15%"></span> <span class="shapes shapes--primary" style="left: 13%; top: -80%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle shapes--color4" style="left: 40%; top: 200px"></span> <span class="shapes shapes--primary" style="left: 15%; bottom: 10%; transform: rotate(75deg)"></span> <span class="shapes shapes--circle shapes--color3" style="right: 50%; top: 30%"></span> <span class="shapes shapes--primary" style="right: 20%; top: -100%"></span> <span class="shapes shapes--circle" style="right: 10%; top: -20%"></span> <span class="shapes shapes--color4" style="right: 35%; top: -20%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle" style="left: 40%; top: -50%"></span> <span class="shapes shapes--color3" style="right: 30%; top: 20%"></span> <span class="shapes shapes--circle shapes--primary" style="right: 30%; bottom: 20%"></span></section></footer></div> <!----> <!----></div></div>
+    <script src="/assets/js/app.152cc865.js" defer></script><script src="/assets/js/12.22dc2157.js" defer></script><script src="/assets/js/3.72f65101.js" defer></script><script src="/assets/js/11.9ce5aa47.js" defer></script><script src="/assets/js/10.48854263.js" defer></script><script src="/assets/js/15.f87ba54c.js" defer></script><script src="/assets/js/2.8ffb7ac8.js" defer></script><script src="/assets/js/5.69a15828.js" defer></script><script src="/assets/js/6.ca7c455c.js" defer></script><script src="/assets/js/16.7d53733f.js" defer></script><script src="/assets/js/68.128f735a.js" defer></script><script src="/assets/js/7.cc0a13af.js" defer></script><script src="/assets/js/9.bc7d0b68.js" defer></script><script src="/assets/js/13.949cbefc.js" defer></script><script src="/assets/js/4.98ee0f72.js" defer></script>
+  </body>
+</html>

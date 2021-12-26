@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自动化基础架构中的系统测试 | MY TITLE</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-title" content="MY APPLE TITLE">
+  <meta name="theme-color" content="MY COLOR THEME">
+  <meta name="msapplication-navbutton-color" content="MY COLOR THEME">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="coverage" content="WorldWide">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="application-name" content="MY APP NAME">
+  <meta name="msapplication-TileColor" content="MY COLOR THEME">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-square70x70logo" content="/favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/favicon/ms-icon-310x310.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ktquez">
+  <meta property="fb:app_id" content="MY FACEBOOK APP ID">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MY SITE NAME">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="360">
+  <meta property="og:image:type" content="image/png">
+  <meta name="google-site-verification" content="MY VERIFICATION KEY">
+  <meta name="msvalidate.01" content="MY VERIFICATION KEY">
+  <meta name="yandex-verification" content="MY VERIFICATION KEY">
+  <link rel="publisher" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="/humans.txt">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff5733">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/" hreflang="en">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt-br">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/es/" hreflang="es">
+  <link rel="preconnect" href="https://connect.facebook.net/">
+  <link rel="preconnect" href="https://platform.twitter.com/">
+  <link rel="preconnect" href="https://widget.sndcdn.com/">
+  <link rel="preconnect" href="https://api-widget.soundcloud.com/">
+  <link rel="preconnect" href="https://www.youtube.com/">
+  <link rel="preconnect" href="https://scrimba.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://c.disquscdn.com/">
+  <link rel="preconnect" href="https://disqus.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com/">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+    <meta property="og:image" content="/autores/my.jpeg"><meta name="twitter:image" content="/autores/my.jpeg">
+    <link rel="preload" href="/assets/css/0.styles.eef050b4.css" as="style"><link rel="preload" href="/assets/js/app.152cc865.js" as="script"><link rel="preload" href="/assets/js/12.22dc2157.js" as="script"><link rel="preload" href="/assets/js/3.72f65101.js" as="script"><link rel="preload" href="/assets/js/11.9ce5aa47.js" as="script"><link rel="preload" href="/assets/js/10.48854263.js" as="script"><link rel="preload" href="/assets/js/15.f87ba54c.js" as="script"><link rel="preload" href="/assets/js/2.8ffb7ac8.js" as="script"><link rel="preload" href="/assets/js/5.69a15828.js" as="script"><link rel="preload" href="/assets/js/6.ca7c455c.js" as="script"><link rel="preload" href="/assets/js/16.7d53733f.js" as="script"><link rel="preload" href="/assets/js/111.189aaa3c.js" as="script"><link rel="preload" href="/assets/js/7.cc0a13af.js" as="script"><link rel="preload" href="/assets/js/9.bc7d0b68.js" as="script"><link rel="preload" href="/assets/js/13.949cbefc.js" as="script"><link rel="preload" href="/assets/js/4.98ee0f72.js" as="script"><link rel="prefetch" href="/assets/js/1.049577ca.js"><link rel="prefetch" href="/assets/js/100.89072a8f.js"><link rel="prefetch" href="/assets/js/101.6df01df9.js"><link rel="prefetch" href="/assets/js/102.8b3778fc.js"><link rel="prefetch" href="/assets/js/103.cf80daa0.js"><link rel="prefetch" href="/assets/js/104.7f5cfbc5.js"><link rel="prefetch" href="/assets/js/105.1a41d040.js"><link rel="prefetch" href="/assets/js/106.894aaceb.js"><link rel="prefetch" href="/assets/js/107.b1cee0a0.js"><link rel="prefetch" href="/assets/js/108.e43497ce.js"><link rel="prefetch" href="/assets/js/109.760e3a23.js"><link rel="prefetch" href="/assets/js/110.8b1a1236.js"><link rel="prefetch" href="/assets/js/112.031d8a39.js"><link rel="prefetch" href="/assets/js/113.2a90f4bc.js"><link rel="prefetch" href="/assets/js/114.3e29483f.js"><link rel="prefetch" href="/assets/js/115.7245418c.js"><link rel="prefetch" href="/assets/js/116.c258bb71.js"><link rel="prefetch" href="/assets/js/117.f9999e64.js"><link rel="prefetch" href="/assets/js/118.72859e3d.js"><link rel="prefetch" href="/assets/js/119.c6c61956.js"><link rel="prefetch" href="/assets/js/120.5771f6ae.js"><link rel="prefetch" href="/assets/js/121.f4fb9923.js"><link rel="prefetch" href="/assets/js/122.bc231bfa.js"><link rel="prefetch" href="/assets/js/123.158cf659.js"><link rel="prefetch" href="/assets/js/124.02ee2194.js"><link rel="prefetch" href="/assets/js/125.4cf4e2c9.js"><link rel="prefetch" href="/assets/js/126.b1eb1604.js"><link rel="prefetch" href="/assets/js/127.42ad2b47.js"><link rel="prefetch" href="/assets/js/128.b4ee2e7f.js"><link rel="prefetch" href="/assets/js/129.635692e9.js"><link rel="prefetch" href="/assets/js/130.3ccb6e65.js"><link rel="prefetch" href="/assets/js/131.edf8785d.js"><link rel="prefetch" href="/assets/js/132.09cf4f81.js"><link rel="prefetch" href="/assets/js/133.922daf3e.js"><link rel="prefetch" href="/assets/js/134.ff091517.js"><link rel="prefetch" href="/assets/js/135.41b865a7.js"><link rel="prefetch" href="/assets/js/136.b47439aa.js"><link rel="prefetch" href="/assets/js/137.ba3b5abe.js"><link rel="prefetch" href="/assets/js/138.a73c97ff.js"><link rel="prefetch" href="/assets/js/139.991c72ef.js"><link rel="prefetch" href="/assets/js/14.74d39783.js"><link rel="prefetch" href="/assets/js/140.6882aef7.js"><link rel="prefetch" href="/assets/js/141.4ca11626.js"><link rel="prefetch" href="/assets/js/142.1855583f.js"><link rel="prefetch" href="/assets/js/143.bb5a5eef.js"><link rel="prefetch" href="/assets/js/144.f93cd7db.js"><link rel="prefetch" href="/assets/js/145.e799e1fe.js"><link rel="prefetch" href="/assets/js/146.289485e5.js"><link rel="prefetch" href="/assets/js/147.116d14ca.js"><link rel="prefetch" href="/assets/js/148.df20648f.js"><link rel="prefetch" href="/assets/js/149.25a21e39.js"><link rel="prefetch" href="/assets/js/150.181ec5c4.js"><link rel="prefetch" href="/assets/js/151.ca39578e.js"><link rel="prefetch" href="/assets/js/152.fb478ca0.js"><link rel="prefetch" href="/assets/js/153.a2e13ef0.js"><link rel="prefetch" href="/assets/js/154.1d947248.js"><link rel="prefetch" href="/assets/js/155.b7dd0ad0.js"><link rel="prefetch" href="/assets/js/156.29d62a38.js"><link rel="prefetch" href="/assets/js/157.d2e78a0e.js"><link rel="prefetch" href="/assets/js/158.4d8fded2.js"><link rel="prefetch" href="/assets/js/159.b75edb71.js"><link rel="prefetch" href="/assets/js/160.95457737.js"><link rel="prefetch" href="/assets/js/161.718d2a68.js"><link rel="prefetch" href="/assets/js/162.9224c1f2.js"><link rel="prefetch" href="/assets/js/163.dbfa40ee.js"><link rel="prefetch" href="/assets/js/164.bd7ad716.js"><link rel="prefetch" href="/assets/js/165.c37947ac.js"><link rel="prefetch" href="/assets/js/166.ae3cbd4d.js"><link rel="prefetch" href="/assets/js/167.9674bc97.js"><link rel="prefetch" href="/assets/js/168.224f67b1.js"><link rel="prefetch" href="/assets/js/169.60b0add8.js"><link rel="prefetch" href="/assets/js/17.4bd7bfb7.js"><link rel="prefetch" href="/assets/js/170.04a5d8a2.js"><link rel="prefetch" href="/assets/js/171.3d24c124.js"><link rel="prefetch" href="/assets/js/172.70f1deef.js"><link rel="prefetch" href="/assets/js/173.8aac40d5.js"><link rel="prefetch" href="/assets/js/174.100043f1.js"><link rel="prefetch" href="/assets/js/175.9bce1f40.js"><link rel="prefetch" href="/assets/js/176.f57b1ec2.js"><link rel="prefetch" href="/assets/js/177.bd11609d.js"><link rel="prefetch" href="/assets/js/178.6cde88fe.js"><link rel="prefetch" href="/assets/js/179.c6556c3e.js"><link rel="prefetch" href="/assets/js/18.364a1c7a.js"><link rel="prefetch" href="/assets/js/180.8f661fe6.js"><link rel="prefetch" href="/assets/js/19.1087666b.js"><link rel="prefetch" href="/assets/js/20.32414a86.js"><link rel="prefetch" href="/assets/js/21.df70e842.js"><link rel="prefetch" href="/assets/js/22.1a7bb308.js"><link rel="prefetch" href="/assets/js/23.cb78472b.js"><link rel="prefetch" href="/assets/js/24.50e9f515.js"><link rel="prefetch" href="/assets/js/25.46b3ab9e.js"><link rel="prefetch" href="/assets/js/26.a300c330.js"><link rel="prefetch" href="/assets/js/27.aa95a34a.js"><link rel="prefetch" href="/assets/js/28.1379fba5.js"><link rel="prefetch" href="/assets/js/29.ed2fd094.js"><link rel="prefetch" href="/assets/js/30.1cf5c075.js"><link rel="prefetch" href="/assets/js/31.707ee8c1.js"><link rel="prefetch" href="/assets/js/32.6cb23a99.js"><link rel="prefetch" href="/assets/js/33.f6aa3340.js"><link rel="prefetch" href="/assets/js/34.274ba06d.js"><link rel="prefetch" href="/assets/js/35.a4abf573.js"><link rel="prefetch" href="/assets/js/36.b0bb1a8c.js"><link rel="prefetch" href="/assets/js/37.a76af20e.js"><link rel="prefetch" href="/assets/js/38.9cfafe24.js"><link rel="prefetch" href="/assets/js/39.2cfff7e8.js"><link rel="prefetch" href="/assets/js/40.229f5d3d.js"><link rel="prefetch" href="/assets/js/41.f09ea6ba.js"><link rel="prefetch" href="/assets/js/42.b1c288ed.js"><link rel="prefetch" href="/assets/js/43.399440ed.js"><link rel="prefetch" href="/assets/js/44.2353b402.js"><link rel="prefetch" href="/assets/js/45.c46ff05f.js"><link rel="prefetch" href="/assets/js/46.acb62d8d.js"><link rel="prefetch" href="/assets/js/47.28fa9043.js"><link rel="prefetch" href="/assets/js/48.2e4aa712.js"><link rel="prefetch" href="/assets/js/49.c5b98afb.js"><link rel="prefetch" href="/assets/js/50.efed2333.js"><link rel="prefetch" href="/assets/js/51.d0145f09.js"><link rel="prefetch" href="/assets/js/52.51d6927e.js"><link rel="prefetch" href="/assets/js/53.1504af38.js"><link rel="prefetch" href="/assets/js/54.d4e577ae.js"><link rel="prefetch" href="/assets/js/55.1f9c27b0.js"><link rel="prefetch" href="/assets/js/56.8dd81906.js"><link rel="prefetch" href="/assets/js/57.235aa13f.js"><link rel="prefetch" href="/assets/js/58.86ab6cec.js"><link rel="prefetch" href="/assets/js/59.b35b7555.js"><link rel="prefetch" href="/assets/js/60.d23c6e8e.js"><link rel="prefetch" href="/assets/js/61.6ed29488.js"><link rel="prefetch" href="/assets/js/62.b06ce067.js"><link rel="prefetch" href="/assets/js/63.53c47f8c.js"><link rel="prefetch" href="/assets/js/64.a07662b1.js"><link rel="prefetch" href="/assets/js/65.666dc5d8.js"><link rel="prefetch" href="/assets/js/66.41eed6c1.js"><link rel="prefetch" href="/assets/js/67.0884e779.js"><link rel="prefetch" href="/assets/js/68.128f735a.js"><link rel="prefetch" href="/assets/js/69.09d1f95e.js"><link rel="prefetch" href="/assets/js/70.e94b7664.js"><link rel="prefetch" href="/assets/js/71.445a8fb0.js"><link rel="prefetch" href="/assets/js/72.f8d8cccd.js"><link rel="prefetch" href="/assets/js/73.85b678ef.js"><link rel="prefetch" href="/assets/js/74.a5352a2b.js"><link rel="prefetch" href="/assets/js/75.477396c4.js"><link rel="prefetch" href="/assets/js/76.98b2b77d.js"><link rel="prefetch" href="/assets/js/77.53678b71.js"><link rel="prefetch" href="/assets/js/78.14c0b510.js"><link rel="prefetch" href="/assets/js/79.9c97255b.js"><link rel="prefetch" href="/assets/js/80.ac99d13c.js"><link rel="prefetch" href="/assets/js/81.96d4efe5.js"><link rel="prefetch" href="/assets/js/82.9d7ee1d5.js"><link rel="prefetch" href="/assets/js/83.a396d08d.js"><link rel="prefetch" href="/assets/js/84.72e01c42.js"><link rel="prefetch" href="/assets/js/85.7548261b.js"><link rel="prefetch" href="/assets/js/86.bf4bb84b.js"><link rel="prefetch" href="/assets/js/87.94fd6a22.js"><link rel="prefetch" href="/assets/js/88.c9f369c3.js"><link rel="prefetch" href="/assets/js/89.3cae8c82.js"><link rel="prefetch" href="/assets/js/90.cda0ddf8.js"><link rel="prefetch" href="/assets/js/91.8596c56d.js"><link rel="prefetch" href="/assets/js/92.78612bf9.js"><link rel="prefetch" href="/assets/js/93.a5f9769b.js"><link rel="prefetch" href="/assets/js/94.65ab03b6.js"><link rel="prefetch" href="/assets/js/95.3bf11943.js"><link rel="prefetch" href="/assets/js/96.c6f01a4e.js"><link rel="prefetch" href="/assets/js/97.da276862.js"><link rel="prefetch" href="/assets/js/98.76da3e3c.js"><link rel="prefetch" href="/assets/js/99.653d9f9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eef050b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div itemscope="itemscope" itemtype="https://schema.org/WebPage" class="layout-main"><meta itemprop="name" content="MY TITLE"> <meta itemprop="alternateName" content="MY TITLE"> <meta itemprop="url" content="https://MY_DOMAIN.COM"> <nav aria-label="Navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="container nav-mobile" style="display:none;"><span itemprop="headline" class="nav-mobile__title">传送门</span> <ul class="nav-mobile__list"><li class="nav-mobile__item"><a href="/about/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">关于我</span></a></li><li class="nav-mobile__item"><a href="/categories/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">类别</span></a></li><li class="nav-mobile__item"><a href="/contact/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">联系我</span></a></li><li class="nav-mobile__item"><a href="/categories/Agile_QA.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Agile QA</span></a></li><li class="nav-mobile__item"><a href="/categories/Quality.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Quality</span></a></li><li class="nav-mobile__item"><a href="/categories/automation_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">automation test</span></a></li><li class="nav-mobile__item"><a href="/categories/performance_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">performance test</span></a></li><li class="nav-mobile__item"><a href="/categories/vuejs.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Vue.js</span></a></li></ul></nav> <div class="container-fluid wrapper-body__nm"><header itemscope="itemscope" itemtype="https://schema.org/Organization" class="header"><!----> <div class="row header-top"><div class="column xs-33 sm-20"><div class="hamburguer header-top__hamburguer"><div class="hamburguer__wrapper"><span class="hamburguer__line"></span> <span class="hamburguer__line"></span> <span class="hamburguer__line"></span></div></div> <!----></div> <div class="column xs-33 sm-60"><div class="header__logo"><a href="/" itemprop="url" class="header-top-logo__link router-link-active"><img itemprop="logo" src="/ktquez-play-logo.png" srcset="/ktquez-play-logo.png 1x, /ktquez-play-logo@2x.png 2x" alt="Logo in 3 colors in play format"></a></div> <meta itemprop="name" content="MY TITLE"> <meta itemprop="sameAs" content="https://www.github.com/qileilove"></div> <div class="column xs-33 sm-20"><div class="search header-top__search"><!----> <span class="icon search__icon">search</span></div> <div class="switch-bw header-top__toggle"><span class="switch-bw__text">
+    打开黑夜模式，体验黑夜的魅力
+  </span> <label for="switch-bw" class="switch-bw__label"><input type="checkbox" id="switch-bw" name="switch-bw" aria-labelledby="switch-bw-text" class="switch-bw__input"> <span class="switch-bw__ball"></span> <span id="switch-bw-text" hidden="hidden">switch to black or white</span></label></div></div></div></header> <main id="main" itemscope="itemscope" itemtype="https://schema.org/Blog" class="main-page"><div><a href="#main" class="vue-skip-to">跳过主内容</a> <div><div class="page page__full row justify-right"><article itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting" class="column xs-100 page__full__box box-default"><meta itemprop="mainEntityOfPage" content="/posts/System_Testing_in_Automated_Infrastructure.html"> <header class="page-header page__full-header"><button type="button" class="ui-button reset-button back-button"><span class="icon back-button__icon icon--arrow">arrow</span> <span class="back-button__text">返回</span></button> <div class="page-header__meta"><time datetime="Wed Nov 27 2019 09:00:00 GMT+0800 (China Standard Time)" itemprop="datePublished" class="text">
+                
+            </time> <meta itemprop="dateModified" content="currentPost.updated_at"> <!----></div> <h1 itemprop="name headline" class="page-header__title">自动化基础架构中的系统测试</h1> <div class="page-header-cat"><nav class="page-header-cat__nav"><ul class="page-header-cat__list"><li class="page-header-cat__item"><a href="/categories/automation_test.html" itemprop="keywords" class="page-header-cat__link meta-text">
+                  automation test
+                </a></li></ul></nav></div> <!----></header> <div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject" class="post-cover"><picture> <img itemprop="url" src="/images/posts/2019/11/System_Testing_in_Automated_Infrastructure.png" title="/home.jpg" alt="/home.jpg" class="post-cover__image cover"></picture></div> <!----> <section class="page-content page__full-content"><div class="row"><div class="column no-pad-l sm-50 post-share"><div class="observer"><!----> <!----> <!----></div></div> <!----></div> <div class="row"><div class="column no-pad-l md-75 xl-67 post-content"><div class="post-content__box-player"><!----></div> <div class="post-content__excerpt"><!----></div> <div class="post-content__table-contents"><div class="table-contents"><h3 id="table-of-content" class="table-contents__title">文本</h3> <nav><ol class="table-contents__list"><li class="table-contents__item"><a href="#我们怎么知道基础架构是否正确呢" title="我们怎么知道基础架构是否正确呢" class="table-contents__link"><span>我们怎么知道基础架构是否正确呢</span></a></li><li class="table-contents__item"><a href="#系统测试的实际效果如何？" title="系统测试的实际效果如何？" class="table-contents__link"><span>系统测试的实际效果如何？</span></a></li><li class="table-contents__item"><a href="#自动化基础设施的系统测试" title="自动化基础设施的系统测试" class="table-contents__link"><span>自动化基础设施的系统测试</span></a></li><li class="table-contents__item"><a href="#敏捷api开发入门指南" title="敏捷API开发入门指南" class="table-contents__link"><span>敏捷API开发入门指南</span></a></li><li class="table-contents__item"><a href="#ci-cd是什么" title="CI / CD是什么?" class="table-contents__link"><span>CI / CD是什么?</span></a></li><li class="table-contents__item"><a href="#了解工作流程" title="了解工作流程" class="table-contents__link"><span>了解工作流程</span></a></li><!----><!----><!----></ol></nav></div></div> <div itemprop="articleBody"><div class="content custom"><h1 id="自动化基础架构中的系统测试"><a href="#自动化基础架构中的系统测试" aria-hidden="true" class="header-anchor">#</a> 自动化基础架构中的系统测试</h1> <p>测试很重要!我们都知道这一点。但是我们如何适当地自动化测试，以及如何将系统测试集成到自动化部署系统中?</p> <p>在当今软件交付的世界中，基础设施的自动化已经成为提供一致性和可靠性的关键组件。我们可以轻松地“启动”成千上万个虚拟机，这掩盖了一个事实，即需要考虑的基础设施非常复杂。</p> <p>虚拟化，网络，安全性，存储和其他技术的复杂性要求在适当的配置方面具有适当水平的专业知识。 以下是一个简单的Spring-Boot服务可用于使用Docker for AWS的基础架构的各种配置的小样本：</p> <ul><li>IAM policies</li> <li>VPC(s)</li> <li>Elastic Load Balancer(s)</li> <li>Subnets</li> <li>Security Groups</li> <li>Route 53 Hosted Zones</li> <li>EC2 AMI(s)</li> <li>Network Interfaces</li> <li>Autoscale Groups</li> <li>Docker images / DockerHub</li> <li>Volumes</li> <li>RDS Instance(s)</li></ul> <h2 id="我们怎么知道基础架构是否正确呢"><a href="#我们怎么知道基础架构是否正确呢" aria-hidden="true" class="header-anchor">#</a> 我们怎么知道基础架构是否正确呢</h2> <p>考虑系统测试。 系统测试提供了一种有效的方法，可以验证软件及其支持环境是否符合您的功能和非功能要求。</p> <h2 id="系统测试的实际效果如何？"><a href="#系统测试的实际效果如何？" aria-hidden="true" class="header-anchor">#</a> 系统测试的实际效果如何？</h2> <p>我们为客户机执行的一个示例是模拟集群成员在生产负载期间停止的效果。使用完全集成的stg环境，我们测量了对客户端延迟的影响、客户端接收到的HTTP错误计数和服务器性能指标。</p> <p>这些数据是在集群加载和删除成员并重新引入时收集的。通过LoadUI模拟负载，使用SoapUI断言收集客户端指标。这个测试的结果帮助我们了解在减少可用成员时集群可以支持的容量。它还确认了新成员的添加进展顺利，对客户端或其他集群成员没有影响。
+当然 你也可以使用jmeter gatling 等性能测试工具来检测集群的性能。</p> <h2 id="自动化基础设施的系统测试"><a href="#自动化基础设施的系统测试" aria-hidden="true" class="header-anchor">#</a> 自动化基础设施的系统测试</h2> <p>利用云提供商(如Amazon Web Services、Microsoft Azure或谷歌Compute test)中的自动化基础设施的组织，以确保其基础设施配置支持弹性。Netflix在开发开源工具以禁用基础设施方面处于领先地位(例如Chaos Monkey)。这些停机通常会测试以下特性:</p> <ul><li>容器自我修复</li> <li>自动缩放组</li> <li>DNS故障转移</li> <li>弹性负载平衡</li> <li>多可用区故障转移</li> <li>多区域故障转移</li></ul> <p>结合开源API测试工具（如SoapUI，postman）或API测试框架（如Ready！，supertest，httpclient等）的强大功能 使用API​​，您可以模拟系统级中断，并深入了解基础架构的行为。</p> <h2 id="敏捷api开发入门指南"><a href="#敏捷api开发入门指南" aria-hidden="true" class="header-anchor">#</a> 敏捷API开发入门指南</h2> <p>我最近有机会与SmartBear Software合作获得了新的教育资源：《敏捷API开发入门指南：API交付中的DevOps，CI和CD》。 除了分享用于系统测试的最佳实践之外，我还将研究如何选择和实施正确的工具如何改变您的API交付策略。</p> <p>我们来看：</p> <p>API开发环境的变化，以及它们给寻求发展的组织带来的挑战和机遇</p> <p>什么是DevOps？ DevOps组织中的API团队的结构如何？</p> <p>在DevOps中，什么是持续集成/持续交付？ 您如何确定最适合您的API团队的方法？</p> <p>现代软件交付的最佳实践，以及与之配套的工具的详尽说明</p> <h2 id="ci-cd是什么"><a href="#ci-cd是什么" aria-hidden="true" class="header-anchor">#</a> CI / CD是什么?</h2> <p>CI/CD代表持续集成和持续交付。持续集成(CI)是开发人员和测试人员协作验证新代码的过程。CI使开发人员能够执行频繁的迭代构建。尽早发现问题可以更容易、更快地修复bug。持续交付(CD)是确保应用软件随时可以部署的过程。部署应该与按下按钮一样简单，而且回滚是无缝的。</p> <p>CI/CD是DevOps的关键支柱，它是一种协作和集成的哲学和实践，以持续快速地交付和实现业务目标。要了解更多关于DevOps和实际实践的信息，请阅读本系列。</p> <h2 id="了解工作流程"><a href="#了解工作流程" aria-hidden="true" class="header-anchor">#</a> 了解工作流程</h2> <p>我们将介绍一个简单的CI实施，在其中我们将创建一个工作流程，该流程将自动执行以下步骤：</p> <p>从代码存储库克隆项目。 为简单起见，我已将GitHub中API Builder的默认“ myproject”作为示例应用程序代码提交。 该应用程序包括一些我们可以用来验证构建过程的API。</p> <p>生成/编译项目。 我们将使用API​​ Builder项目随附的Dockerfile构建Docker映像。</p> <p>将映像作为Docker容器运行。</p> <p>测试。 执行curl命令以验证应用程序的API（例如/ api / greet）。</p> <p>为了安排这些步骤，我们将使用Jenkins作为CI自动化工具。 Jenkins是一个具有很多社区支持的开源工具，并且有多个插件可用于将工具集成到CI / CD工具链中。 为了在Jenkins中实现工作流程，我们将配置Jenkins Pipeline，其中包括构建应用程序，对其进行测试然后进行交付的阶段。</p> <h3 id="要求"><a href="#要求" aria-hidden="true" class="header-anchor">#</a> 要求</h3> <p>我们暂时不需要注册任何外部解决方案，因此以下是您所需的最低要求：</p> <p>在您的服务器或本地计算机上安装了Docker</p> <p>可以连接到Internet的服务器</p> <p>安装Jenkins</p> <p>让我们开始安装Jenkins。 我们将Jenkins作为Docker容器运行，因此我们无需执行手动安装步骤。</p> <p>确保您的服务器中已经安装了Docker。</p> <p>执行以下命令(大约需要2分钟)</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; docker run -d --name myjenkins -p 9081:8080 -v /var/run/docker.sock:/var/run/docker.sock jocotech/jenkins-docker
+
+</code></pre></div><p>跟踪的示例输出：</p> <div class="language- extra-class"><pre class="language-text"><code>Unable to find image 'jocotech/jenkins-docker:latest' locally
+latest: Pulling from jocotech/jenkins-docker
+cd8eada9c7bb: Already exists
+c2677faec825: Already exists
+fcce419a96b1: Already exists
+045b51e26e75: Already exists
+88e50f3a5916: Already exists
+9db1045008ba: Pull complete
+5ba72089e00c: Pull complete
+810bdb5dd91f: Pull complete
+62b563475556: Pull complete
+a2a2a4696ad5: Pull complete
+bafbaa3dc29c: Pull complete
+e95108b76c18: Pull complete
+b576d217ee87: Pull complete
+22ea7e4b05ac: Pull complete
+52f6bbc55d53: Pull complete
+fb1b8b8d85a8: Pull complete
+d3e97125d2d4: Pull complete
+6724e249196a: Pull complete
+1541ce6ca956: Pull complete
+bb2f94277986: Pull complete
+2b8e2dfef6c1: Pull complete
+6672118ddcb6: Pull complete
+8fcbc06a30cc: Pull complete
+bfa5fcef83ed: Pull complete
+513e5fa6617a: Pull complete
+Digest: sha256:ca0771afe4c0b0b3feea6d28885e49f019a08a6b5570194f1218c3cdcac95a56
+Status: Downloaded newer image for jocotech/jenkins-docker:latest
+9661f4ecaf0782d7461d4246222de4794fcfbdd56f1768e1f50a9b4345426a52
+</code></pre></div><p>参数解释</p> <p>让我们来看看每个参数。</p> <div class="language- extra-class"><pre class="language-text"><code>docker run: -d –name myjenkins -p 9081:8080 -v /var/run/docker.sock:/var/run/docker.sock jocotech/jenkins-docker
+
+
+</code></pre></div><p>以分离模式运行容器，并将其命名为myjenkins:</p> <div class="language- extra-class"><pre class="language-text"><code>-d --name myjenkins
+
+</code></pre></div><p>Jenkins浏览器接口将通过主机的系统端口9081进行访问，该端口绑定到容器端口8080的内部(Jenkins服务在此监听)。</p> <p>-p 9081:8080</p> <p>将主机的Docker套接字装入容器中。这将允许Jenkins容器使用主机的Docker守护进程来构建映像并运行容器</p> <p>-v /var/run/docker.sock:/var/run/docker.sock</p> <p>这是一个预先构建的Jenkins图像与Docker二进制文件。这是用于构建此映像的Dockerfile</p> <p>jocotech/jenkins-docker</p> <p>验证</p> <p>运行此命令以验证Docker主机和容器挂载是否工作</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; docker exec myjenkins docker images
+</code></pre></div><p>输出</p> <div class="language- extra-class"><pre class="language-text"><code>REPOSITORY                            TAG                 IMAGE ID            CREATED             SIZE
+jocotech/jenkins-docker               latest              8591474b374f        3 days ago          1.17GB
+</code></pre></div><p>如果它返回“connect: permission denied”错误(这在一些linux发行版上发生)，执行这个命令来修复权限错误</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; docker exec -u root myjenkins chmod 666 /var/run/docker.sock
+</code></pre></div><p>运行此命令以检查Jenkins容器是否正在运行</p> <blockquote><p>docker ps</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>CONTAINER ID  IMAGE                    COMMAND                  CREATED        STATUS        PORTS                                                           NAMES
+8591474b374f  jocotech/jenkins-docker  &quot;/sbin/tini -- /us...&quot;   2 minutes ago  Up 2 minutes  0.0.0.0:50000-&gt;50000/tcp,0.0.0.0:9081-&gt;8080/tcp         myjenkins
+
+</code></pre></div><p>使用此命令获取初始管理密码</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;docker exec -it myjenkins cat /var/jenkins_home/secrets/initialAdminPassword
+</code></pre></div><p>输出</p> <p>8340d7cbd92440f8857a43f0463efd49</p> <p>通过浏览器使用以下url启动Jenkins: http://localhost:9081，粘贴密码，然后继续:</p> <p>选择安装建议的插件</p> <p>这将显示正在安装的不同插件：</p> <p>在下一个屏幕上，选择Continue as admin，然后保存并完成</p> <p>现在，Jenkins的安装已经完成。点击开始使用Jenkins</p> <p>这是Jenkins的主页，也叫Jenkins dashboard</p> <h3 id="pipeline说明"><a href="#pipeline说明" aria-hidden="true" class="header-anchor">#</a> pipeline说明</h3> <p>让我们来看看必须执行的流水线的不同步骤。 第一步是从GItHub存储库复制API Builder项目。 无需GitHub凭据即可访问此项目。</p> <div class="language- extra-class"><pre class="language-text"><code>     stage（'Clone API Builder project'）{
+
+       脚步 {
+
+         git'https://github.com/jocotech/apib-default'
+
+       }
+
+     }
+</code></pre></div><p>接下来，此脚本将构建应用程序的docker映像，并将其标记为myproject并标记为1。</p> <div class="language- extra-class"><pre class="language-text"><code>  stage('Build Docker image') {
+      steps{
+        script {
+           docker.build &quot;myproject:1&quot; 
+        }
+      }
+    }
+</code></pre></div><p>然后，将应用程序作为标有myproject的Docker容器运行，它将监听端口8080。</p> <div class="language- extra-class"><pre class="language-text"><code>  stage('Run Docker Container') {
+      steps{
+        sh &quot;docker run -d --name myproject  -p 8080:8080 myproject:1&quot;
+      }
+    }
+</code></pre></div><p>最后一步是测试并调用默认API。 该API将返回Howdy Joel作为成功响应。</p> <div class="language- extra-class"><pre class="language-text"><code>   stage('Test API') {
+      steps{
+        sh &quot;curl http://server-ip:8080/api/greet?username=joel&quot;
+      }
+    }
+</code></pre></div><p>请注意，您需要用服务器的IP地址替换server-ip。</p> <p>返回到Jenkins仪表板。 现在，我们可以通过选择“新建项目”来创建工作。 输入作业名称（例如CICD-Part1），选择“管道”，然后单击“确定”。</p> <h3 id="复制下面的完整pipeline脚本"><a href="#复制下面的完整pipeline脚本" aria-hidden="true" class="header-anchor">#</a> 复制下面的完整pipeline脚本</h3> <div class="language- extra-class"><pre class="language-text"><code>pipeline {
+  agent any
+   stages {
+    stage('Clone API Builder project') {
+      steps {
+        git 'https://github.com/jocotech/apib-default'
+      }
+    }
+    stage('Build Docker image') {
+      steps{
+        script {
+           docker.build &quot;myproject:1&quot; 
+           sh &quot;docker images&quot;
+        }
+      }
+    }
+    stage('Run Docker Container') {
+      steps{
+        sh &quot;docker run -d --name myproject  -p 8080:8080 myproject:1&quot;
+        sh &quot;docker ps&quot;
+      }
+    }   
+    stage('Test API') {
+      steps{
+        sh  &quot;sleep 4&quot;
+        sh &quot;curl http://server-ip:8080/api/greet?username=joel&quot;
+      }
+    }    
+  }
+}
+
+</code></pre></div><p>请记住将server-ip替换为服务器的IP地址。</p> <p>向下滚动到“管道”部分，粘贴脚本，然后保存。</p> <p>现在，我们准备执行管道。 单击立即生成以触发作业。</p> <p>这将显示每个步骤的状态和持续时间。 如果球变成蓝色，则作业成功。 请注意，执行所有步骤只花了不到一分钟的时间。</p> <p>我们还可以通过单击作业编号并选择控制台输出来查看管道执行的完整跟踪。</p> <p>在控制台输出的底部，我们应该看到最终状态以及API响应“ Howdy joel”。</p> <p>而已。 我们已经通过Jenkins配置并成功运行了CI管道。</p> <p>清理</p> <p>要清理并删除管道创建的docker映像和容器，请运行以下命令：</p> <blockquote><p>docker stop myproject
+docker rm myproject
+docker rmi myproject:1</p></blockquote> <p>或者使用这个示例脚本创建另一个jenkins作业来实现自动化</p> <div class="language- extra-class"><pre class="language-text"><code>pipeline {
+  agent any
+  stages {
+    stage('Clean up Part1') {
+      steps{
+        sh &quot;docker stop myproject&quot;
+        sh &quot;docker rm myproject&quot;
+        sh &quot;docker rmi myproject:1&quot;
+      }
+    }    
+  }
+}
+</code></pre></div><p>摘要</p> <p>在这篇文章中，我们看到了安装Jenkins并为API Builder项目运行一个简单的Continuous Integration过程非常容易。 实施CI流程后，每个代码签入均由自动构建进行验证，从而使团队可以及早发现错误。 请继续关注下一部分，该部分将介绍连续交付过程。</p></div></div></div> <div class="column no-pad-r sm-25 xl-33 xsNone smNone post-sidebar"><div class="bizu box-default post-sidebar__bizu bizu--vertical"><div class="bizu-image"><span class="bizu-close">×</span> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener"><img src="/general/web-development.png" alt="Illustration of a user studying online" class="bizu-image__image"></a></div> <div class="bizu-info"><a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__text">
+      The most complete course of Vue.js from Udemy, including Vuex and Vue-router with a promotional price not to be missed.
+    </a> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__by">
+      udemy.com
+    </a></div></div></div> <aside class="column xs-100"><hr class="divider"> <div><div class="observer"><!----> <!----> <!----></div></div> <hr class="divider"> <section class="post-content__disqus"><h3>想给我说点什么</h3> <!----></section></aside></div></section></article></div> <!----> <aside class="container main"></aside></div> <!----> <div class="elevator"><a class="elevator__link"><span class="icon elevator__icon">greaterthan</span></a></div> <!----></div></main> <footer class="footer"><div class="footer-box1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 161" class="footer-box__shape"><path d="M-11.925-4809v-154.746c40.454,19.75,273.683,130.936,420.544,142.612,161.25,12.821,339.978-42.709,521.543-86.3,169.82-40.769,395.43,29.2,423.912,38.429v60Z" transform="translate(11.926 4970)"></path></svg></div> <div class="footer-box2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 246" class="footer-box__shape"><path d="M-1505.5-4725.5v-238.1c8.149-3.133,18.138-5.059,29.672-5.9h30.954c201.21,11.667,696.6,224.535,855.572,236.458,205.129,15.385,287.179-164.1,432.047-175.625a42.381,42.381,0,0,1,16.756,1.857V-4725.5Z" transform="translate(1506 4971)"></path></svg> <ul class="footer-social__list"><li class="footer-social__item"><a href="https://www.github.com/qileilove" target="_blank" rel="noopener external" title="Follow us on Facebook"><span class="icon footer-social__icon">github</span></a></li></ul> <div class="footer-newsletter"><!----></div></div> <section class="footer-box3"><div class="row"><div class="column sm-50 footer-card"><div class="observer"><div class="spinner observer__spinner"><div class="double-bounce1"></div> <div class="double-bounce2"></div></div> <!----> <!----></div></div> <div class="column sm-50 footer-nav"><div class="row justify-right"><div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--1"><h2 class="meta-text title">Qi Lei的blog</h2> <nav class="footer-nav1"><ul><li class="footer-nav1__item"><a href="/about/">关于我</a> <!----></li><li class="footer-nav1__item"><a href="/categories/">类别</a> <!----></li><li class="footer-nav1__item"><a href="/contact/">联系我</a> <!----></li></ul></nav></div> <div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--2"><h2 class="meta-text title">社交群</h2> <nav class="footer-nav2"><ul><li class="footer-nav2__item"><!----> <!----></li></ul></nav></div></div></div> <div class="column sm-100 footer-copy">2019 © Qi Lei - 
+        <a href="https://vuepress.vuejs.org/" rel="noopener" target="_blank">
+          MADE WITH VUEPRESS
+        </a></div></div> <span class="shapes shapes--circle" style="left: 3%; top: -20%"></span> <span class="shapes shapes--primary shapes--color3" style="left: 30%; top: -15%"></span> <span class="shapes shapes--primary" style="left: 13%; top: -80%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle shapes--color4" style="left: 40%; top: 200px"></span> <span class="shapes shapes--primary" style="left: 15%; bottom: 10%; transform: rotate(75deg)"></span> <span class="shapes shapes--circle shapes--color3" style="right: 50%; top: 30%"></span> <span class="shapes shapes--primary" style="right: 20%; top: -100%"></span> <span class="shapes shapes--circle" style="right: 10%; top: -20%"></span> <span class="shapes shapes--color4" style="right: 35%; top: -20%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle" style="left: 40%; top: -50%"></span> <span class="shapes shapes--color3" style="right: 30%; top: 20%"></span> <span class="shapes shapes--circle shapes--primary" style="right: 30%; bottom: 20%"></span></section></footer></div> <!----> <!----></div></div>
+    <script src="/assets/js/app.152cc865.js" defer></script><script src="/assets/js/12.22dc2157.js" defer></script><script src="/assets/js/3.72f65101.js" defer></script><script src="/assets/js/11.9ce5aa47.js" defer></script><script src="/assets/js/10.48854263.js" defer></script><script src="/assets/js/15.f87ba54c.js" defer></script><script src="/assets/js/2.8ffb7ac8.js" defer></script><script src="/assets/js/5.69a15828.js" defer></script><script src="/assets/js/6.ca7c455c.js" defer></script><script src="/assets/js/16.7d53733f.js" defer></script><script src="/assets/js/111.189aaa3c.js" defer></script><script src="/assets/js/7.cc0a13af.js" defer></script><script src="/assets/js/9.bc7d0b68.js" defer></script><script src="/assets/js/13.949cbefc.js" defer></script><script src="/assets/js/4.98ee0f72.js" defer></script>
+  </body>
+</html>

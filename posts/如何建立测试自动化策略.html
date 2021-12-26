@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何建立测试自动化策略？ | MY TITLE</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-title" content="MY APPLE TITLE">
+  <meta name="theme-color" content="MY COLOR THEME">
+  <meta name="msapplication-navbutton-color" content="MY COLOR THEME">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="coverage" content="WorldWide">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="application-name" content="MY APP NAME">
+  <meta name="msapplication-TileColor" content="MY COLOR THEME">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-square70x70logo" content="/favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/favicon/ms-icon-310x310.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ktquez">
+  <meta property="fb:app_id" content="MY FACEBOOK APP ID">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MY SITE NAME">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="360">
+  <meta property="og:image:type" content="image/png">
+  <meta name="google-site-verification" content="MY VERIFICATION KEY">
+  <meta name="msvalidate.01" content="MY VERIFICATION KEY">
+  <meta name="yandex-verification" content="MY VERIFICATION KEY">
+  <link rel="publisher" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="/humans.txt">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff5733">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/" hreflang="en">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt-br">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/es/" hreflang="es">
+  <link rel="preconnect" href="https://connect.facebook.net/">
+  <link rel="preconnect" href="https://platform.twitter.com/">
+  <link rel="preconnect" href="https://widget.sndcdn.com/">
+  <link rel="preconnect" href="https://api-widget.soundcloud.com/">
+  <link rel="preconnect" href="https://www.youtube.com/">
+  <link rel="preconnect" href="https://scrimba.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://c.disquscdn.com/">
+  <link rel="preconnect" href="https://disqus.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com/">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+    <meta property="og:image" content="/autores/my.jpeg"><meta name="twitter:image" content="/autores/my.jpeg">
+    <link rel="preload" href="/assets/css/0.styles.eef050b4.css" as="style"><link rel="preload" href="/assets/js/app.152cc865.js" as="script"><link rel="preload" href="/assets/js/12.22dc2157.js" as="script"><link rel="preload" href="/assets/js/3.72f65101.js" as="script"><link rel="preload" href="/assets/js/11.9ce5aa47.js" as="script"><link rel="preload" href="/assets/js/10.48854263.js" as="script"><link rel="preload" href="/assets/js/15.f87ba54c.js" as="script"><link rel="preload" href="/assets/js/2.8ffb7ac8.js" as="script"><link rel="preload" href="/assets/js/5.69a15828.js" as="script"><link rel="preload" href="/assets/js/6.ca7c455c.js" as="script"><link rel="preload" href="/assets/js/16.7d53733f.js" as="script"><link rel="preload" href="/assets/js/159.b75edb71.js" as="script"><link rel="preload" href="/assets/js/7.cc0a13af.js" as="script"><link rel="preload" href="/assets/js/9.bc7d0b68.js" as="script"><link rel="preload" href="/assets/js/13.949cbefc.js" as="script"><link rel="preload" href="/assets/js/4.98ee0f72.js" as="script"><link rel="prefetch" href="/assets/js/1.049577ca.js"><link rel="prefetch" href="/assets/js/100.89072a8f.js"><link rel="prefetch" href="/assets/js/101.6df01df9.js"><link rel="prefetch" href="/assets/js/102.8b3778fc.js"><link rel="prefetch" href="/assets/js/103.cf80daa0.js"><link rel="prefetch" href="/assets/js/104.7f5cfbc5.js"><link rel="prefetch" href="/assets/js/105.1a41d040.js"><link rel="prefetch" href="/assets/js/106.894aaceb.js"><link rel="prefetch" href="/assets/js/107.b1cee0a0.js"><link rel="prefetch" href="/assets/js/108.e43497ce.js"><link rel="prefetch" href="/assets/js/109.760e3a23.js"><link rel="prefetch" href="/assets/js/110.8b1a1236.js"><link rel="prefetch" href="/assets/js/111.189aaa3c.js"><link rel="prefetch" href="/assets/js/112.031d8a39.js"><link rel="prefetch" href="/assets/js/113.2a90f4bc.js"><link rel="prefetch" href="/assets/js/114.3e29483f.js"><link rel="prefetch" href="/assets/js/115.7245418c.js"><link rel="prefetch" href="/assets/js/116.c258bb71.js"><link rel="prefetch" href="/assets/js/117.f9999e64.js"><link rel="prefetch" href="/assets/js/118.72859e3d.js"><link rel="prefetch" href="/assets/js/119.c6c61956.js"><link rel="prefetch" href="/assets/js/120.5771f6ae.js"><link rel="prefetch" href="/assets/js/121.f4fb9923.js"><link rel="prefetch" href="/assets/js/122.bc231bfa.js"><link rel="prefetch" href="/assets/js/123.158cf659.js"><link rel="prefetch" href="/assets/js/124.02ee2194.js"><link rel="prefetch" href="/assets/js/125.4cf4e2c9.js"><link rel="prefetch" href="/assets/js/126.b1eb1604.js"><link rel="prefetch" href="/assets/js/127.42ad2b47.js"><link rel="prefetch" href="/assets/js/128.b4ee2e7f.js"><link rel="prefetch" href="/assets/js/129.635692e9.js"><link rel="prefetch" href="/assets/js/130.3ccb6e65.js"><link rel="prefetch" href="/assets/js/131.edf8785d.js"><link rel="prefetch" href="/assets/js/132.09cf4f81.js"><link rel="prefetch" href="/assets/js/133.922daf3e.js"><link rel="prefetch" href="/assets/js/134.ff091517.js"><link rel="prefetch" href="/assets/js/135.41b865a7.js"><link rel="prefetch" href="/assets/js/136.b47439aa.js"><link rel="prefetch" href="/assets/js/137.ba3b5abe.js"><link rel="prefetch" href="/assets/js/138.a73c97ff.js"><link rel="prefetch" href="/assets/js/139.991c72ef.js"><link rel="prefetch" href="/assets/js/14.74d39783.js"><link rel="prefetch" href="/assets/js/140.6882aef7.js"><link rel="prefetch" href="/assets/js/141.4ca11626.js"><link rel="prefetch" href="/assets/js/142.1855583f.js"><link rel="prefetch" href="/assets/js/143.bb5a5eef.js"><link rel="prefetch" href="/assets/js/144.f93cd7db.js"><link rel="prefetch" href="/assets/js/145.e799e1fe.js"><link rel="prefetch" href="/assets/js/146.289485e5.js"><link rel="prefetch" href="/assets/js/147.116d14ca.js"><link rel="prefetch" href="/assets/js/148.df20648f.js"><link rel="prefetch" href="/assets/js/149.25a21e39.js"><link rel="prefetch" href="/assets/js/150.181ec5c4.js"><link rel="prefetch" href="/assets/js/151.ca39578e.js"><link rel="prefetch" href="/assets/js/152.fb478ca0.js"><link rel="prefetch" href="/assets/js/153.a2e13ef0.js"><link rel="prefetch" href="/assets/js/154.1d947248.js"><link rel="prefetch" href="/assets/js/155.b7dd0ad0.js"><link rel="prefetch" href="/assets/js/156.29d62a38.js"><link rel="prefetch" href="/assets/js/157.d2e78a0e.js"><link rel="prefetch" href="/assets/js/158.4d8fded2.js"><link rel="prefetch" href="/assets/js/160.95457737.js"><link rel="prefetch" href="/assets/js/161.718d2a68.js"><link rel="prefetch" href="/assets/js/162.9224c1f2.js"><link rel="prefetch" href="/assets/js/163.dbfa40ee.js"><link rel="prefetch" href="/assets/js/164.bd7ad716.js"><link rel="prefetch" href="/assets/js/165.c37947ac.js"><link rel="prefetch" href="/assets/js/166.ae3cbd4d.js"><link rel="prefetch" href="/assets/js/167.9674bc97.js"><link rel="prefetch" href="/assets/js/168.224f67b1.js"><link rel="prefetch" href="/assets/js/169.60b0add8.js"><link rel="prefetch" href="/assets/js/17.4bd7bfb7.js"><link rel="prefetch" href="/assets/js/170.04a5d8a2.js"><link rel="prefetch" href="/assets/js/171.3d24c124.js"><link rel="prefetch" href="/assets/js/172.70f1deef.js"><link rel="prefetch" href="/assets/js/173.8aac40d5.js"><link rel="prefetch" href="/assets/js/174.100043f1.js"><link rel="prefetch" href="/assets/js/175.9bce1f40.js"><link rel="prefetch" href="/assets/js/176.f57b1ec2.js"><link rel="prefetch" href="/assets/js/177.bd11609d.js"><link rel="prefetch" href="/assets/js/178.6cde88fe.js"><link rel="prefetch" href="/assets/js/179.c6556c3e.js"><link rel="prefetch" href="/assets/js/18.364a1c7a.js"><link rel="prefetch" href="/assets/js/180.8f661fe6.js"><link rel="prefetch" href="/assets/js/19.1087666b.js"><link rel="prefetch" href="/assets/js/20.32414a86.js"><link rel="prefetch" href="/assets/js/21.df70e842.js"><link rel="prefetch" href="/assets/js/22.1a7bb308.js"><link rel="prefetch" href="/assets/js/23.cb78472b.js"><link rel="prefetch" href="/assets/js/24.50e9f515.js"><link rel="prefetch" href="/assets/js/25.46b3ab9e.js"><link rel="prefetch" href="/assets/js/26.a300c330.js"><link rel="prefetch" href="/assets/js/27.aa95a34a.js"><link rel="prefetch" href="/assets/js/28.1379fba5.js"><link rel="prefetch" href="/assets/js/29.ed2fd094.js"><link rel="prefetch" href="/assets/js/30.1cf5c075.js"><link rel="prefetch" href="/assets/js/31.707ee8c1.js"><link rel="prefetch" href="/assets/js/32.6cb23a99.js"><link rel="prefetch" href="/assets/js/33.f6aa3340.js"><link rel="prefetch" href="/assets/js/34.274ba06d.js"><link rel="prefetch" href="/assets/js/35.a4abf573.js"><link rel="prefetch" href="/assets/js/36.b0bb1a8c.js"><link rel="prefetch" href="/assets/js/37.a76af20e.js"><link rel="prefetch" href="/assets/js/38.9cfafe24.js"><link rel="prefetch" href="/assets/js/39.2cfff7e8.js"><link rel="prefetch" href="/assets/js/40.229f5d3d.js"><link rel="prefetch" href="/assets/js/41.f09ea6ba.js"><link rel="prefetch" href="/assets/js/42.b1c288ed.js"><link rel="prefetch" href="/assets/js/43.399440ed.js"><link rel="prefetch" href="/assets/js/44.2353b402.js"><link rel="prefetch" href="/assets/js/45.c46ff05f.js"><link rel="prefetch" href="/assets/js/46.acb62d8d.js"><link rel="prefetch" href="/assets/js/47.28fa9043.js"><link rel="prefetch" href="/assets/js/48.2e4aa712.js"><link rel="prefetch" href="/assets/js/49.c5b98afb.js"><link rel="prefetch" href="/assets/js/50.efed2333.js"><link rel="prefetch" href="/assets/js/51.d0145f09.js"><link rel="prefetch" href="/assets/js/52.51d6927e.js"><link rel="prefetch" href="/assets/js/53.1504af38.js"><link rel="prefetch" href="/assets/js/54.d4e577ae.js"><link rel="prefetch" href="/assets/js/55.1f9c27b0.js"><link rel="prefetch" href="/assets/js/56.8dd81906.js"><link rel="prefetch" href="/assets/js/57.235aa13f.js"><link rel="prefetch" href="/assets/js/58.86ab6cec.js"><link rel="prefetch" href="/assets/js/59.b35b7555.js"><link rel="prefetch" href="/assets/js/60.d23c6e8e.js"><link rel="prefetch" href="/assets/js/61.6ed29488.js"><link rel="prefetch" href="/assets/js/62.b06ce067.js"><link rel="prefetch" href="/assets/js/63.53c47f8c.js"><link rel="prefetch" href="/assets/js/64.a07662b1.js"><link rel="prefetch" href="/assets/js/65.666dc5d8.js"><link rel="prefetch" href="/assets/js/66.41eed6c1.js"><link rel="prefetch" href="/assets/js/67.0884e779.js"><link rel="prefetch" href="/assets/js/68.128f735a.js"><link rel="prefetch" href="/assets/js/69.09d1f95e.js"><link rel="prefetch" href="/assets/js/70.e94b7664.js"><link rel="prefetch" href="/assets/js/71.445a8fb0.js"><link rel="prefetch" href="/assets/js/72.f8d8cccd.js"><link rel="prefetch" href="/assets/js/73.85b678ef.js"><link rel="prefetch" href="/assets/js/74.a5352a2b.js"><link rel="prefetch" href="/assets/js/75.477396c4.js"><link rel="prefetch" href="/assets/js/76.98b2b77d.js"><link rel="prefetch" href="/assets/js/77.53678b71.js"><link rel="prefetch" href="/assets/js/78.14c0b510.js"><link rel="prefetch" href="/assets/js/79.9c97255b.js"><link rel="prefetch" href="/assets/js/80.ac99d13c.js"><link rel="prefetch" href="/assets/js/81.96d4efe5.js"><link rel="prefetch" href="/assets/js/82.9d7ee1d5.js"><link rel="prefetch" href="/assets/js/83.a396d08d.js"><link rel="prefetch" href="/assets/js/84.72e01c42.js"><link rel="prefetch" href="/assets/js/85.7548261b.js"><link rel="prefetch" href="/assets/js/86.bf4bb84b.js"><link rel="prefetch" href="/assets/js/87.94fd6a22.js"><link rel="prefetch" href="/assets/js/88.c9f369c3.js"><link rel="prefetch" href="/assets/js/89.3cae8c82.js"><link rel="prefetch" href="/assets/js/90.cda0ddf8.js"><link rel="prefetch" href="/assets/js/91.8596c56d.js"><link rel="prefetch" href="/assets/js/92.78612bf9.js"><link rel="prefetch" href="/assets/js/93.a5f9769b.js"><link rel="prefetch" href="/assets/js/94.65ab03b6.js"><link rel="prefetch" href="/assets/js/95.3bf11943.js"><link rel="prefetch" href="/assets/js/96.c6f01a4e.js"><link rel="prefetch" href="/assets/js/97.da276862.js"><link rel="prefetch" href="/assets/js/98.76da3e3c.js"><link rel="prefetch" href="/assets/js/99.653d9f9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eef050b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div itemscope="itemscope" itemtype="https://schema.org/WebPage" class="layout-main"><meta itemprop="name" content="MY TITLE"> <meta itemprop="alternateName" content="MY TITLE"> <meta itemprop="url" content="https://MY_DOMAIN.COM"> <nav aria-label="Navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="container nav-mobile" style="display:none;"><span itemprop="headline" class="nav-mobile__title">传送门</span> <ul class="nav-mobile__list"><li class="nav-mobile__item"><a href="/about/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">关于我</span></a></li><li class="nav-mobile__item"><a href="/categories/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">类别</span></a></li><li class="nav-mobile__item"><a href="/contact/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">联系我</span></a></li><li class="nav-mobile__item"><a href="/categories/Agile_QA.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Agile QA</span></a></li><li class="nav-mobile__item"><a href="/categories/Quality.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Quality</span></a></li><li class="nav-mobile__item"><a href="/categories/automation_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">automation test</span></a></li><li class="nav-mobile__item"><a href="/categories/performance_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">performance test</span></a></li><li class="nav-mobile__item"><a href="/categories/vuejs.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Vue.js</span></a></li></ul></nav> <div class="container-fluid wrapper-body__nm"><header itemscope="itemscope" itemtype="https://schema.org/Organization" class="header"><!----> <div class="row header-top"><div class="column xs-33 sm-20"><div class="hamburguer header-top__hamburguer"><div class="hamburguer__wrapper"><span class="hamburguer__line"></span> <span class="hamburguer__line"></span> <span class="hamburguer__line"></span></div></div> <!----></div> <div class="column xs-33 sm-60"><div class="header__logo"><a href="/" itemprop="url" class="header-top-logo__link router-link-active"><img itemprop="logo" src="/ktquez-play-logo.png" srcset="/ktquez-play-logo.png 1x, /ktquez-play-logo@2x.png 2x" alt="Logo in 3 colors in play format"></a></div> <meta itemprop="name" content="MY TITLE"> <meta itemprop="sameAs" content="https://www.github.com/qileilove"></div> <div class="column xs-33 sm-20"><div class="search header-top__search"><!----> <span class="icon search__icon">search</span></div> <div class="switch-bw header-top__toggle"><span class="switch-bw__text">
+    打开黑夜模式，体验黑夜的魅力
+  </span> <label for="switch-bw" class="switch-bw__label"><input type="checkbox" id="switch-bw" name="switch-bw" aria-labelledby="switch-bw-text" class="switch-bw__input"> <span class="switch-bw__ball"></span> <span id="switch-bw-text" hidden="hidden">switch to black or white</span></label></div></div></div></header> <main id="main" itemscope="itemscope" itemtype="https://schema.org/Blog" class="main-page"><div><a href="#main" class="vue-skip-to">跳过主内容</a> <div><div class="page page__full row justify-right"><article itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting" class="column xs-100 page__full__box box-default"><meta itemprop="mainEntityOfPage" content="/posts/%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E7%AD%96%E7%95%A5.html"> <header class="page-header page__full-header"><button type="button" class="ui-button reset-button back-button"><span class="icon back-button__icon icon--arrow">arrow</span> <span class="back-button__text">返回</span></button> <div class="page-header__meta"><time datetime="Wed Sep 16 2020 09:00:00 GMT+0800 (China Standard Time)" itemprop="datePublished" class="text">
+                
+            </time> <meta itemprop="dateModified" content="currentPost.updated_at"> <!----></div> <h1 itemprop="name headline" class="page-header__title">如何建立测试自动化策略？</h1> <div class="page-header-cat"><nav class="page-header-cat__nav"><ul class="page-header-cat__list"><li class="page-header-cat__item"><a href="/categories/Agile_QA.html" itemprop="keywords" class="page-header-cat__link meta-text">
+                  Agile QA
+                </a></li></ul></nav></div> <!----></header> <div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject" class="post-cover"><picture> <img itemprop="url" src="/images/posts/2020/9/A5.png" class="post-cover__image cover"></picture></div> <!----> <section class="page-content page__full-content"><div class="row"><div class="column no-pad-l sm-50 post-share"><div class="observer"><!----> <!----> <!----></div></div> <!----></div> <div class="row"><div class="column no-pad-l md-75 xl-67 post-content"><div class="post-content__box-player"><!----></div> <div class="post-content__excerpt"><!----></div> <div class="post-content__table-contents"><div class="table-contents"><h3 id="table-of-content" class="table-contents__title">文本</h3> <nav><ol class="table-contents__list"><li class="table-contents__item"><a href="#测试自动化策略是…" title="测试自动化策略是…" class="table-contents__link"><span>测试自动化策略是…</span></a></li><li class="table-contents__item"><a href="#逐步测试自动化策略" title="逐步测试自动化策略" class="table-contents__link"><span>逐步测试自动化策略</span></a></li><li class="table-contents__item"><a href="#建立测试自动化策略" title="建立测试自动化策略" class="table-contents__link"><span>建立测试自动化策略</span></a></li><li class="table-contents__item"><a href="#自动测试的类型" title="自动测试的类型" class="table-contents__link"><span>自动测试的类型</span></a></li><li class="table-contents__item"><a href="#测试金字塔" title="测试金字塔" class="table-contents__link"><span>测试金字塔</span></a></li><li class="table-contents__item"><a href="#选择一个自动化框架" title="选择一个自动化框架" class="table-contents__link"><span>选择一个自动化框架</span></a></li><!----><!----><!----><!----><!----><!----><li class="table-contents__item"><a href="#分配专用资源" title="分配专用资源" class="table-contents__link"><span>分配专用资源</span></a></li><li class="table-contents__item"><a href="#选择测试工具" title="选择测试工具" class="table-contents__link"><span>选择测试工具</span></a></li><li class="table-contents__item"><a href="#技术栈：" title="技术栈：" class="table-contents__link"><span>技术栈：</span></a></li><li class="table-contents__item"><a href="#工具功能：" title="工具功能：" class="table-contents__link"><span>工具功能：</span></a></li><li class="table-contents__item"><a href="#预算：" title="预算：" class="table-contents__link"><span>预算：</span></a></li><li class="table-contents__item"><a href="#设计和运行测试" title="设计和运行测试" class="table-contents__link"><span>设计和运行测试</span></a></li><li class="table-contents__item"><a href="#保持脚本井井有条" title="保持脚本井井有条" class="table-contents__link"><span>保持脚本井井有条</span></a></li><li class="table-contents__item"><a href="#自动化测试：编写文档" title="自动化测试：编写文档" class="table-contents__link"><span>自动化测试：编写文档</span></a></li><li class="table-contents__item"><a href="#敏捷项目的测试自动化策略" title="敏捷项目的测试自动化策略" class="table-contents__link"><span>敏捷项目的测试自动化策略</span></a></li><li class="table-contents__item"><a href="#内部与外包测试自动化策略" title="内部与外包测试自动化策略" class="table-contents__link"><span>内部与外包测试自动化策略</span></a></li><li class="table-contents__item"><a href="#总结一下" title="总结一下" class="table-contents__link"><span>总结一下</span></a></li><!----><!----><!----><!----></ol></nav></div></div> <div itemprop="articleBody"><div class="content custom"><p>自动化意味着使用工具来更有效地执行特定的测试任务。因此，它不是手动测试还是自动测试，而是始终用来支持另一个。从开发人员和产品所有者到CTO，参与产品生命周期的每个人在开始讨论测试自动化时都应牢记这一点。
+当实现自动化的想法穿过你的心，不要转移到如何部分马上; 相反，请关注为什么。为实现自动化而使用诸如以下参数的自动化</p> <div class="language- extra-class"><pre class="language-text"><code>听起来不错，所以一定不错；
+另一家公司的人已经在使用它；
+我们可以通过自动化测试覆盖100％的功能；
+</code></pre></div><p>类似的推理通常被误认为是采用自动化测试的绿灯。同时，学习测试自动化策略对于那些想要缩短软件交付周期并为QA工程师留下不那么单调的任务的人来说是一个好主意。
+如果您尚未决定目标，那就花点时间。您可以阅读该文章，稍后再返回优点和缺点清单。</p> <h2 id="测试自动化策略是…"><a href="#测试自动化策略是…" aria-hidden="true" class="header-anchor">#</a> 测试自动化策略是…</h2> <p>…质量保证团队在质量保证过程中应用自动化的方式。如果您开始分解测试自动化策略，将获得一系列元素，看起来像这样：
+手动和自动测试计划；
+测试环境，包括定义和描述；</p> <div class="language- extra-class"><pre class="language-text"><code>测试用例;
+自动化脚本；
+测试数据;
+检测结果;
+执行日志。
+</code></pre></div><p>具有成本效益的测试自动化策略意味着以结果为导向的方法，该方法可以帮助公司紧跟市场趋势并保持领先，或者至少实现其雄心勃勃的业务目标。
+每个项目都有特定的测试自动化计划和策略。即使在测试类似产品时，某些方面也需要进行调整。您可以使用相同的模板来创建测试自动化策略，但最终版本至少会稍有不同。</p> <h2 id="逐步测试自动化策略"><a href="#逐步测试自动化策略" aria-hidden="true" class="header-anchor">#</a> 逐步测试自动化策略</h2> <p>因此，您已经知道高效的自动化始于设定目标。让我具体说明一下。目标定义了从长远角度来看要实现的目标，例如：
+更好的产品质量，从而提高用户满意度；
+减少人力和测试时间；
+提高测试效率，同时降低测试成本。
+目标更像是“一次一步”。这些是您必须完成以实现目标的较小任务。测试自动化的目标包括：
+更广泛的测试范围；
+创建易于运行和维护的测试；
+每次迭代后提高产品质量；
+改进的稳定性和可靠性；
+提高质量检查工程师的效率和更好的动力。
+如果您想获得列表中每个项目的详细说明，可以在我们博客中有关自动化测试目标的文章中找到。现在，让我们继续进行逐步说明。
+<img src="https://miro.medium.com/max/1400/1*JxWtAWQSSSEWp0XWG2QzFw.jpeg" alt></p> <h2 id="建立测试自动化策略"><a href="#建立测试自动化策略" aria-hidden="true" class="header-anchor">#</a> 建立测试自动化策略</h2> <p>＃1。选择要自动化的东西
+设置测试自动化是一个非常耗时的过程，因此请考虑从短期和长期的角度计划实现的目标。设定合理的期望。
+另外，请记住，选择合适的测试用例开始并不意味着您应该永远使用它们。这些测试在此阶段应该符合您的业务目标，但是随着软件的发展它们变得无关紧要，这是可以的。
+现在，请考虑重复进行测试的频率及其需要的工作范围。在理想情况下，您将选择至少满足以下几个条件的测试：</p> <div class="language- extra-class"><pre class="language-text"><code>如果手动完成，则很耗时；
+涉及大数据集；
+涵盖稳定的软件组件；
+需要在多个系统（浏览器，操作系统，硬件等）中进行检查；
+平凡，不需要创造力；
+具有清晰的通过/失败结果；
+高度重复。
+</code></pre></div><p>另一方面，某些测试不适合自动化。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>将执行一次的测试；
+基于视觉的测试；
+测试没有明显的通过/失败结果；
+反自动化功能，例如CAPTCHA；
+原始和不稳定的功能。
+</code></pre></div><p>我不建议自动化这些东西。该过程将花费很多时间，运行测试后得到的结果将不准确。例如，UX测试需要明确的人工输入和估计。探索性测试依赖于QA工程师的知识，经验，甚至直觉和偶然性。显然，手动检查在这里更为合理。
+##确定测试方法</p> <p>测试自动化方法定义了如何执行测试。一个积极的态度开始在SDLC的早期阶段测试设计过程。质量保证团队会在创建构建之前发现缺陷。在反应式方法中，测试在编码完成后开始。质量检查小组将检查应该准备发布的产品的初始版本。</p> <p><img src="https://miro.medium.com/max/1400/1*_lYHHbiCAAdDCKY8GdyeCw.jpeg" alt></p> <h2 id="自动测试的类型"><a href="#自动测试的类型" aria-hidden="true" class="header-anchor">#</a> 自动测试的类型</h2> <p>测试方法还涵盖团队要执行的测试类型。自动化的最常见候选者是：</p> <div class="language- extra-class"><pre class="language-text"><code>单元测试-由熟悉后端的开发团队对代码的最小功能元素进行检查。
+组件测试-前端的测试团队分别检查每个对象或软件的一部分。
+集成测试-检查单元组合的行为。
+API测试-集成测试的一部分，重点放在API功能上。
+兼容性测试-分析不同浏览器，操作系统，网络环境，硬件等中的软件行为。
+冒烟测试-对旨在证明基本功能（安装，启动，注册等）有效的新版本的审查，以便团队可以继续测试其余功能。
+GUI测试-旨在证明图形用户界面符合软件要求中规定的检查。
+端到端测试-通过复制实际用户方案，从头到尾检查整个工作流程。
+回归测试-一项旨在验证代码更改是否影响最新迭代之后未影响软件功能的部分的分析。
+</code></pre></div><h2 id="测试金字塔"><a href="#测试金字塔" aria-hidden="true" class="header-anchor">#</a> 测试金字塔</h2> <p><img src="https://miro.medium.com/max/1400/1*MIHP8DxIlcDLukf7hsflIQ.jpeg" alt>
+测试金字塔是一项原则，可帮助您明智地选择自动化案例。单元测试涵盖了最低级别的软件代码，并且具有最高的投资回报率，因为它们有助于避免更严重的错误。因此，将这个级别自动化到最大是合理的。
+优先考虑的是组件测试，集成测试和API测试。回归是自动化的又一候选，因为它涵盖了熟悉的功能，每次迭代后都需要进行修订。
+然后才进行GUI测试。尽管非常常见，但GUI自动化非常不切实际。这些测试难以维护，价格昂贵，并且存在大量的误报与否定。
+测试金字塔
+传统方法提出了相反的建议：GUI的自动化程度更高，单元测试的自动化程度更低，而这并不总是有效的。
+考虑以下因素来选择测试方法：
+应用程序所基于的技术。应用规范会影响所需的测试类型以及以后的测试类型-平台和工具的选择。
+团队角色。确保每个团队成员都知道自己的职责，并且有资格涵盖该项目质量保证的特定方面。
+涉及的风险。为了消除最可能和最具破坏性的风险，您需要覆盖脆弱的区域。因此，您应该知道风险。创建一个文档，在其中记录以下参数：
+风险等级-风险变为现实时的处理难度；
+概率—风险变为现实的可能性；
+缓解—采取措施解决风险；
+成本估算-降低风险的成本。</p> <h2 id="选择一个自动化框架"><a href="#选择一个自动化框架" aria-hidden="true" class="header-anchor">#</a> 选择一个自动化框架</h2> <p>测试自动化框架是一组详细的准则，编码标准，项目层次结构，报告机制等，它们为自动化测试脚本创建了一个支架。
+简而言之，这是使测试自动化高效的一种做法。质量检查团队需要选择合适的框架来创建脚本，这些脚本具有更高的重用性，更易于移植和降低维护成本。
+一些最受欢迎的做法是：</p> <div class="language- extra-class"><pre class="language-text"><code>线性脚本；
+依赖的架构；
+模块化框架；
+数据驱动的框架；
+关键字驱动的框架；
+混合框架。
+</code></pre></div><p>测试自动化框架</p> <p><img src="https://miro.medium.com/max/1400/1*YqyGi7YQi7Of2x7DDUSQTg.jpeg" alt></p> <h3 id="记录和回放（也称为线性脚本，记录和回放）"><a href="#记录和回放（也称为线性脚本，记录和回放）" aria-hidden="true" class="header-anchor">#</a> 记录和回放（也称为线性脚本，记录和回放）</h3> <p>它是所有框架中最简单的框架，它使质量检查工程师能够手动记录测试过程的每个步骤和验证参数，以便他们以后可以随时回放。
+线性脚本是生成脚本的最快方法，甚至不需要自动化经验。缺点是重用少，维护困难。</p> <h3 id="结构化脚本（也：库体系结构，功能分解）"><a href="#结构化脚本（也：库体系结构，功能分解）" aria-hidden="true" class="header-anchor">#</a> 结构化脚本（也：库体系结构，功能分解）</h3> <p>该框架采用使用记录和回放创建的脚本，将相似的脚本分组为函数，将其保存到库中，并在需要时调用。
+库体系结构框架可确保更高的重用性，同时降低开发成本和维护工作量。另一方面，它还需要专业知识和更多计划。</p> <h3 id="模块化框架"><a href="#模块化框架" aria-hidden="true" class="header-anchor">#</a> 模块化框架</h3> <p>测试自动化工程师将AUT（被测应用程序）划分为较小的组件（单元，功能，部分），并为每个组件创建一个脚本以进行隔离测试。分层组合这些脚本，可以创建用于更广泛测试运行的整体脚本。
+由于数据是经过硬编码的，因此不能使用多个数据集，但是如果应用程序发生更改，则只需要修复单个测试脚本即可。</p> <h3 id="数据驱动框架"><a href="#数据驱动框架" aria-hidden="true" class="header-anchor">#</a> 数据驱动框架</h3> <p>该框架将测试数据与脚本逻辑分开，并将其存储在外部。测试脚本使用此文件读取输入或输出参数。数据驱动的框架非常适合需要使用不同数据集多次测试同一功能的情况。因此，我们可以使用最少的脚本快速测试具有各种数据的方案。
+设置数据驱动的框架非常耗时。对于熟练的测试自动化工程师来说，这是一项任务，它能够正确格式化数据并编写可利用此框架所有优点的脚本。</p> <h3 id="关键字驱动的框架"><a href="#关键字驱动的框架" aria-hidden="true" class="header-anchor">#</a> 关键字驱动的框架</h3> <p>该框架主要用于GUI自动化，还意味着将测试数据与脚本分开存储。这些说明是按连续顺序（登录，单击等）描述操作的字词。
+使用关键字驱动的框架，您将获得可重用的代码，以将其应用于可独立于AUT构建的多个测试脚本。设置还需要花费大量时间，并且需要付出很多努力才能保持秩序。如果应用程序很大，则证明安装成本高。然后，您可以使用这些脚本几年。</p> <h3 id="混合框架"><a href="#混合框架" aria-hidden="true" class="header-anchor">#</a> 混合框架</h3> <p>每个框架都有其优点和缺点。当测试自动化工程师开始最大程度地发挥积极功能并最大程度减少负面影响时，他们可能会提出各种不同框架的组合，这些框架最适合特定项目。这种混合使混合框架成为敏捷和DevOps测试自动化策略的最常见选择。</p> <h2 id="分配专用资源"><a href="#分配专用资源" aria-hidden="true" class="header-anchor">#</a> 分配专用资源</h2> <p>不要忘记，软件测试自动化是专门为其雇用的人员的任务。有些人试图使自动化成为手动质量检查工程师的兼职工作。但是，这些专家已经承担了其他任务，并且很可能缺乏设置自动化测试的技能。寻找具有脚本编写经验或至少具有相关知识的人员来负责此任务范围会更加有效。</p> <h2 id="选择测试工具"><a href="#选择测试工具" aria-hidden="true" class="header-anchor">#</a> 选择测试工具</h2> <p><img src="https://miro.medium.com/max/1400/1*K-qh6tPvorodBMtUTUAB5w.jpeg" alt>
+您要注意的第一件事是工具的普及程度，这不是错误。流行的工具通常被证明是可靠的，并在网上进行了广泛的讨论。自动化工程师可以在Web上找到许多有用的技巧和有趣的实践。
+此外，要找到精通Selenium，Appium或Cucumber的QA工程师，要比最近才出现且看起来不错的工具容易。除了受欢迎程度外，还有其他要考虑的标准。
+测试工具</p> <h2 id="技术栈："><a href="#技术栈：" aria-hidden="true" class="header-anchor">#</a> 技术栈：</h2> <p>该技术软件已构建。
+被测系统的要求。
+您熟悉的编程语言。</p> <h2 id="工具功能："><a href="#工具功能：" aria-hidden="true" class="header-anchor">#</a> 工具功能：</h2> <p>支持的操作系统，平台和环境（例如，自动浏览器测试，本机/混合应用程序测试等）。
+跨平台测试支持。
+复杂性与易用性。</p> <h2 id="预算："><a href="#预算：" aria-hidden="true" class="header-anchor">#</a> 预算：</h2> <div class="language- extra-class"><pre class="language-text"><code>您在寻找开源还是付费选择？
+您是否正在寻找付费工具中的开发或运行时许可证？
+您打算多久使用一次此工具？
+价格合理吗？
+</code></pre></div><p>经验表明，在开源工具上构建自定义框架是最佳选择。尝试几种解决方案。大多数软件都有免费试用期，因此您可以在购买许可证之前权衡商用工具的所有优缺点。</p> <h2 id="设计和运行测试"><a href="#设计和运行测试" aria-hidden="true" class="header-anchor">#</a> 设计和运行测试</h2> <p>因此，您知道要自动化的内容，要应用的测试类型，要使用的框架和工具。现在是时候从安排过渡到实际工作并开始编写脚本了。这里有一些技巧可以帮助您：</p> <div class="language- extra-class"><pre class="language-text"><code>概述日常工作和程序。
+
+创建在多个项目中使用的测试用例模板。
+
+在编写新的测试用例之前，记得检查类似的用例是否已经存在。
+
+编写简洁且易于理解的测试，因为在将来，其他人也会使用它们。
+
+使测试脚本尽可能的少，这样它们将容易理解和维护。
+
+将大量测试分解成序列，逐个检查。它们越小，出错的概率就越小。
+
+确保测试不依赖于UI。使用可能改变的UI元素和路径肯定会创建无用的脚本。
+
+对如何解决失败的测试用例有一个清晰的计划(执行特性分析，只是向开发团队报告，等等)。
+
+学习对测试用例进行优先排序。
+</code></pre></div><h2 id="保持脚本井井有条"><a href="#保持脚本井井有条" aria-hidden="true" class="header-anchor">#</a> 保持脚本井井有条</h2> <p>有提供自动化软件测试服务经验的人承认，在维护阶段，事情往往会变得混乱。因此，最重要的是，根据测试的目的对测试进行分类，或者提出另一种分类，以便将来可以快速，轻松地找到相关案例。
+不要忘记对新案例进行分类。审查并清理现有案例。它们中的许多并不能永远持续下去，这没关系。解决产品需求，以决定旧案例是否有效，应该使用还是不再适用。永远不要尝试重振无用的东西。</p> <h2 id="自动化测试：编写文档"><a href="#自动化测试：编写文档" aria-hidden="true" class="header-anchor">#</a> 自动化测试：编写文档</h2> <p>文档管理与官僚主义无关，如果管理不当，则会造成延迟。相反，文档比内存更可靠，可以帮助您保持头脑清醒。那要放在纸上呢？
+概述工作范围，然后为每个任务设置里程碑和时间表。它将使每个团队成员都在同一页面上。
+用流程，角色和技术记录自动化方法。当您需要澄清或解决难题时，它将成为您可以解决的一组准则。
+概述自动化环境。在准备好发布之前，为软件创建流水线。
+进行风险分析，为“万事大吉”方案做准备。风险始终存在，而忽略风险的可能性只是粗心大意。
+创建执行计划以确保没有错误的测试。写下日常任务和程序。启动自动回归之前，请运行单独的测试。确保没有假结果。</p> <h2 id="敏捷项目的测试自动化策略"><a href="#敏捷项目的测试自动化策略" aria-hidden="true" class="header-anchor">#</a> 敏捷项目的测试自动化策略</h2> <p>敏捷的测试自动化策略通常意味着一种主动的方法，并且倾向于自动化的单元测试。这些是使快速发布成为可能的基本条件。
+除此之外，请考虑使用关键字驱动的自动化框架。如果选择与业务需求相关的词，则只要这些词与已知命令相对应，就可以使用脚本。关键字也可以成为混合框架的一部分，该混合框架使灵活性在敏捷SDLC中至关重要。
+敏捷项目的自动化策略永远不会忽视单元和组件测试。一次测试一个小功能有助于从自动化中提取真正的价值。一方面，您可以在开发人员编写一段代码后立即为功能创建脚本。另一方面，将较小的部分编译成覆盖大部分功能的测试脚本有助于最大程度地减少途中的错误。</p> <h2 id="内部与外包测试自动化策略"><a href="#内部与外包测试自动化策略" aria-hidden="true" class="header-anchor">#</a> 内部与外包测试自动化策略</h2> <p>内部团队和外包团队的质量检查自动化策略之间没有根本区别。在这两种情况下，您都需要确定要使用哪种测试方法和框架，选择自动化工具，并找到有资格的人员来处理任务。
+区别在于管理工作的范围。当然，在任何情况下，项目所有者（或负责人）都必须管理该过程。而且，如果您正在阅读有关如何构建测试自动化策略的信息，则可能需要弄清楚有关它的一些信息。
+在这两种情况下，您都需要从招聘过程开始。外包测试在这里可以节省时间。组建内部团队并不是一个快速的过程。希望您会找到合格的人员，他们熟悉测试自动化的最佳实践。
+如果您选择QA外包，您将拥有一个功能齐全的团队，在软件测试自动化服务，成熟的自动化策略，喜欢的工具和测试脚本模板方面具有相关经验。
+换句话说，内部团队至少在开始时就需要更多的参与和管理。使用外包的质量检查，您可以请求报告，指定您感兴趣的详细信息，而其余的则是他们要处理的任务。
+拥有质量检查部门的公司通常决定使用内部质量检查资源和外包自动化来覆盖手动软件测试，因为这样做更具成本效益。有些人选择从外部团队开始，然后在任务流程稳定的情况下聘请自动化专家。</p> <h2 id="总结一下"><a href="#总结一下" aria-hidden="true" class="header-anchor">#</a> 总结一下</h2> <p>实现测试自动化需要时间，精力和特定技能。自动化测试并不总是必不可少的。除非您定义明确的目标，否则它不会替代手动测试，也不会使项目受益。那么，如何利用所有人都在谈论的那些优势呢？
+知道为什么您确实需要QA自动化。保持合理的期望。从小处着手，并着眼于长远的眼光。如果结果不是即时的，请不要放弃自动化。但是最重​​要的是，仔细研究您的自动化策略。希望我能帮助您，至少有一点帮助。</p> <h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3> <p>石头 磊哥 seven 随便叫</p> <h3 id="company"><a href="#company" aria-hidden="true" class="header-anchor">#</a> company</h3> <p>thoughtworks</p> <p>大家好，本人不才，目前依旧混迹于thoughtworks，做着一名看起来像全栈的QA，兴趣爱好前端，目前是thoughtworks 西安QA社区的leader，如果有兴趣分享话题，或者想加入tw，可以找我</p> <h3 id="roles"><a href="#roles" aria-hidden="true" class="header-anchor">#</a> roles</h3> <p>QA（营生） dev（front-end dev 兴趣爱好）</p> <h3 id="联系方式"><a href="#联系方式" aria-hidden="true" class="header-anchor">#</a> 联系方式</h3> <p>如果想转载或者高薪挖我 请直接联系我 哈哈</p> <h4 id="wechat"><a href="#wechat" aria-hidden="true" class="header-anchor">#</a> wechat:</h4> <p>qileiwangnan</p> <h4 id="email"><a href="#email" aria-hidden="true" class="header-anchor">#</a> email:</h4> <p>qileilove@gmail.com</p></div></div></div> <div class="column no-pad-r sm-25 xl-33 xsNone smNone post-sidebar"><div class="bizu box-default post-sidebar__bizu bizu--vertical"><div class="bizu-image"><span class="bizu-close">×</span> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener"><img src="/general/web-development.png" alt="Illustration of a user studying online" class="bizu-image__image"></a></div> <div class="bizu-info"><a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__text">
+      
+    </a> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__by">
+      udemy.com
+    </a></div></div></div> <aside class="column xs-100"><hr class="divider"> <div><div class="observer"><!----> <!----> <!----></div></div> <hr class="divider"> <section class="post-content__disqus"><h3>想给我说点什么</h3> <!----></section></aside></div></section></article></div> <!----> <aside class="container main"></aside></div> <!----> <div class="elevator"><a class="elevator__link"><span class="icon elevator__icon">greaterthan</span></a></div> <!----></div></main> <footer class="footer"><div class="footer-box1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 161" class="footer-box__shape"><path d="M-11.925-4809v-154.746c40.454,19.75,273.683,130.936,420.544,142.612,161.25,12.821,339.978-42.709,521.543-86.3,169.82-40.769,395.43,29.2,423.912,38.429v60Z" transform="translate(11.926 4970)"></path></svg></div> <div class="footer-box2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 246" class="footer-box__shape"><path d="M-1505.5-4725.5v-238.1c8.149-3.133,18.138-5.059,29.672-5.9h30.954c201.21,11.667,696.6,224.535,855.572,236.458,205.129,15.385,287.179-164.1,432.047-175.625a42.381,42.381,0,0,1,16.756,1.857V-4725.5Z" transform="translate(1506 4971)"></path></svg> <ul class="footer-social__list"><li class="footer-social__item"><a href="https://www.github.com/qileilove" target="_blank" rel="noopener external" title="Follow us on Facebook"><span class="icon footer-social__icon">github</span></a></li></ul> <div class="footer-newsletter"><!----></div></div> <section class="footer-box3"><div class="row"><div class="column sm-50 footer-card"><div class="observer"><div class="spinner observer__spinner"><div class="double-bounce1"></div> <div class="double-bounce2"></div></div> <!----> <!----></div></div> <div class="column sm-50 footer-nav"><div class="row justify-right"><div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--1"><h2 class="meta-text title">Qi Lei的blog</h2> <nav class="footer-nav1"><ul><li class="footer-nav1__item"><a href="/about/">关于我</a> <!----></li><li class="footer-nav1__item"><a href="/categories/">类别</a> <!----></li><li class="footer-nav1__item"><a href="/contact/">联系我</a> <!----></li></ul></nav></div> <div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--2"><h2 class="meta-text title">社交群</h2> <nav class="footer-nav2"><ul><li class="footer-nav2__item"><!----> <!----></li></ul></nav></div></div></div> <div class="column sm-100 footer-copy">2019 © Qi Lei - 
+        <a href="https://vuepress.vuejs.org/" rel="noopener" target="_blank">
+          MADE WITH VUEPRESS
+        </a></div></div> <span class="shapes shapes--circle" style="left: 3%; top: -20%"></span> <span class="shapes shapes--primary shapes--color3" style="left: 30%; top: -15%"></span> <span class="shapes shapes--primary" style="left: 13%; top: -80%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle shapes--color4" style="left: 40%; top: 200px"></span> <span class="shapes shapes--primary" style="left: 15%; bottom: 10%; transform: rotate(75deg)"></span> <span class="shapes shapes--circle shapes--color3" style="right: 50%; top: 30%"></span> <span class="shapes shapes--primary" style="right: 20%; top: -100%"></span> <span class="shapes shapes--circle" style="right: 10%; top: -20%"></span> <span class="shapes shapes--color4" style="right: 35%; top: -20%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle" style="left: 40%; top: -50%"></span> <span class="shapes shapes--color3" style="right: 30%; top: 20%"></span> <span class="shapes shapes--circle shapes--primary" style="right: 30%; bottom: 20%"></span></section></footer></div> <!----> <!----></div></div>
+    <script src="/assets/js/app.152cc865.js" defer></script><script src="/assets/js/12.22dc2157.js" defer></script><script src="/assets/js/3.72f65101.js" defer></script><script src="/assets/js/11.9ce5aa47.js" defer></script><script src="/assets/js/10.48854263.js" defer></script><script src="/assets/js/15.f87ba54c.js" defer></script><script src="/assets/js/2.8ffb7ac8.js" defer></script><script src="/assets/js/5.69a15828.js" defer></script><script src="/assets/js/6.ca7c455c.js" defer></script><script src="/assets/js/16.7d53733f.js" defer></script><script src="/assets/js/159.b75edb71.js" defer></script><script src="/assets/js/7.cc0a13af.js" defer></script><script src="/assets/js/9.bc7d0b68.js" defer></script><script src="/assets/js/13.949cbefc.js" defer></script><script src="/assets/js/4.98ee0f72.js" defer></script>
+  </body>
+</html>

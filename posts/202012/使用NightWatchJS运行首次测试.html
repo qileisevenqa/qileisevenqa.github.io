@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用NightWatchJS运行首次测试 | MY TITLE</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-title" content="MY APPLE TITLE">
+  <meta name="theme-color" content="MY COLOR THEME">
+  <meta name="msapplication-navbutton-color" content="MY COLOR THEME">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="coverage" content="WorldWide">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="application-name" content="MY APP NAME">
+  <meta name="msapplication-TileColor" content="MY COLOR THEME">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-square70x70logo" content="/favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/favicon/ms-icon-310x310.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ktquez">
+  <meta property="fb:app_id" content="MY FACEBOOK APP ID">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MY SITE NAME">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="360">
+  <meta property="og:image:type" content="image/png">
+  <meta name="google-site-verification" content="MY VERIFICATION KEY">
+  <meta name="msvalidate.01" content="MY VERIFICATION KEY">
+  <meta name="yandex-verification" content="MY VERIFICATION KEY">
+  <link rel="publisher" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="/humans.txt">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff5733">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/" hreflang="en">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt-br">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/es/" hreflang="es">
+  <link rel="preconnect" href="https://connect.facebook.net/">
+  <link rel="preconnect" href="https://platform.twitter.com/">
+  <link rel="preconnect" href="https://widget.sndcdn.com/">
+  <link rel="preconnect" href="https://api-widget.soundcloud.com/">
+  <link rel="preconnect" href="https://www.youtube.com/">
+  <link rel="preconnect" href="https://scrimba.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://c.disquscdn.com/">
+  <link rel="preconnect" href="https://disqus.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com/">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+    <meta property="og:image" content="/autores/my.jpeg"><meta name="twitter:image" content="/autores/my.jpeg">
+    <link rel="preload" href="/assets/css/0.styles.eef050b4.css" as="style"><link rel="preload" href="/assets/js/app.152cc865.js" as="script"><link rel="preload" href="/assets/js/12.22dc2157.js" as="script"><link rel="preload" href="/assets/js/3.72f65101.js" as="script"><link rel="preload" href="/assets/js/11.9ce5aa47.js" as="script"><link rel="preload" href="/assets/js/10.48854263.js" as="script"><link rel="preload" href="/assets/js/15.f87ba54c.js" as="script"><link rel="preload" href="/assets/js/2.8ffb7ac8.js" as="script"><link rel="preload" href="/assets/js/5.69a15828.js" as="script"><link rel="preload" href="/assets/js/6.ca7c455c.js" as="script"><link rel="preload" href="/assets/js/16.7d53733f.js" as="script"><link rel="preload" href="/assets/js/72.f8d8cccd.js" as="script"><link rel="preload" href="/assets/js/7.cc0a13af.js" as="script"><link rel="preload" href="/assets/js/9.bc7d0b68.js" as="script"><link rel="preload" href="/assets/js/13.949cbefc.js" as="script"><link rel="preload" href="/assets/js/4.98ee0f72.js" as="script"><link rel="prefetch" href="/assets/js/1.049577ca.js"><link rel="prefetch" href="/assets/js/100.89072a8f.js"><link rel="prefetch" href="/assets/js/101.6df01df9.js"><link rel="prefetch" href="/assets/js/102.8b3778fc.js"><link rel="prefetch" href="/assets/js/103.cf80daa0.js"><link rel="prefetch" href="/assets/js/104.7f5cfbc5.js"><link rel="prefetch" href="/assets/js/105.1a41d040.js"><link rel="prefetch" href="/assets/js/106.894aaceb.js"><link rel="prefetch" href="/assets/js/107.b1cee0a0.js"><link rel="prefetch" href="/assets/js/108.e43497ce.js"><link rel="prefetch" href="/assets/js/109.760e3a23.js"><link rel="prefetch" href="/assets/js/110.8b1a1236.js"><link rel="prefetch" href="/assets/js/111.189aaa3c.js"><link rel="prefetch" href="/assets/js/112.031d8a39.js"><link rel="prefetch" href="/assets/js/113.2a90f4bc.js"><link rel="prefetch" href="/assets/js/114.3e29483f.js"><link rel="prefetch" href="/assets/js/115.7245418c.js"><link rel="prefetch" href="/assets/js/116.c258bb71.js"><link rel="prefetch" href="/assets/js/117.f9999e64.js"><link rel="prefetch" href="/assets/js/118.72859e3d.js"><link rel="prefetch" href="/assets/js/119.c6c61956.js"><link rel="prefetch" href="/assets/js/120.5771f6ae.js"><link rel="prefetch" href="/assets/js/121.f4fb9923.js"><link rel="prefetch" href="/assets/js/122.bc231bfa.js"><link rel="prefetch" href="/assets/js/123.158cf659.js"><link rel="prefetch" href="/assets/js/124.02ee2194.js"><link rel="prefetch" href="/assets/js/125.4cf4e2c9.js"><link rel="prefetch" href="/assets/js/126.b1eb1604.js"><link rel="prefetch" href="/assets/js/127.42ad2b47.js"><link rel="prefetch" href="/assets/js/128.b4ee2e7f.js"><link rel="prefetch" href="/assets/js/129.635692e9.js"><link rel="prefetch" href="/assets/js/130.3ccb6e65.js"><link rel="prefetch" href="/assets/js/131.edf8785d.js"><link rel="prefetch" href="/assets/js/132.09cf4f81.js"><link rel="prefetch" href="/assets/js/133.922daf3e.js"><link rel="prefetch" href="/assets/js/134.ff091517.js"><link rel="prefetch" href="/assets/js/135.41b865a7.js"><link rel="prefetch" href="/assets/js/136.b47439aa.js"><link rel="prefetch" href="/assets/js/137.ba3b5abe.js"><link rel="prefetch" href="/assets/js/138.a73c97ff.js"><link rel="prefetch" href="/assets/js/139.991c72ef.js"><link rel="prefetch" href="/assets/js/14.74d39783.js"><link rel="prefetch" href="/assets/js/140.6882aef7.js"><link rel="prefetch" href="/assets/js/141.4ca11626.js"><link rel="prefetch" href="/assets/js/142.1855583f.js"><link rel="prefetch" href="/assets/js/143.bb5a5eef.js"><link rel="prefetch" href="/assets/js/144.f93cd7db.js"><link rel="prefetch" href="/assets/js/145.e799e1fe.js"><link rel="prefetch" href="/assets/js/146.289485e5.js"><link rel="prefetch" href="/assets/js/147.116d14ca.js"><link rel="prefetch" href="/assets/js/148.df20648f.js"><link rel="prefetch" href="/assets/js/149.25a21e39.js"><link rel="prefetch" href="/assets/js/150.181ec5c4.js"><link rel="prefetch" href="/assets/js/151.ca39578e.js"><link rel="prefetch" href="/assets/js/152.fb478ca0.js"><link rel="prefetch" href="/assets/js/153.a2e13ef0.js"><link rel="prefetch" href="/assets/js/154.1d947248.js"><link rel="prefetch" href="/assets/js/155.b7dd0ad0.js"><link rel="prefetch" href="/assets/js/156.29d62a38.js"><link rel="prefetch" href="/assets/js/157.d2e78a0e.js"><link rel="prefetch" href="/assets/js/158.4d8fded2.js"><link rel="prefetch" href="/assets/js/159.b75edb71.js"><link rel="prefetch" href="/assets/js/160.95457737.js"><link rel="prefetch" href="/assets/js/161.718d2a68.js"><link rel="prefetch" href="/assets/js/162.9224c1f2.js"><link rel="prefetch" href="/assets/js/163.dbfa40ee.js"><link rel="prefetch" href="/assets/js/164.bd7ad716.js"><link rel="prefetch" href="/assets/js/165.c37947ac.js"><link rel="prefetch" href="/assets/js/166.ae3cbd4d.js"><link rel="prefetch" href="/assets/js/167.9674bc97.js"><link rel="prefetch" href="/assets/js/168.224f67b1.js"><link rel="prefetch" href="/assets/js/169.60b0add8.js"><link rel="prefetch" href="/assets/js/17.4bd7bfb7.js"><link rel="prefetch" href="/assets/js/170.04a5d8a2.js"><link rel="prefetch" href="/assets/js/171.3d24c124.js"><link rel="prefetch" href="/assets/js/172.70f1deef.js"><link rel="prefetch" href="/assets/js/173.8aac40d5.js"><link rel="prefetch" href="/assets/js/174.100043f1.js"><link rel="prefetch" href="/assets/js/175.9bce1f40.js"><link rel="prefetch" href="/assets/js/176.f57b1ec2.js"><link rel="prefetch" href="/assets/js/177.bd11609d.js"><link rel="prefetch" href="/assets/js/178.6cde88fe.js"><link rel="prefetch" href="/assets/js/179.c6556c3e.js"><link rel="prefetch" href="/assets/js/18.364a1c7a.js"><link rel="prefetch" href="/assets/js/180.8f661fe6.js"><link rel="prefetch" href="/assets/js/19.1087666b.js"><link rel="prefetch" href="/assets/js/20.32414a86.js"><link rel="prefetch" href="/assets/js/21.df70e842.js"><link rel="prefetch" href="/assets/js/22.1a7bb308.js"><link rel="prefetch" href="/assets/js/23.cb78472b.js"><link rel="prefetch" href="/assets/js/24.50e9f515.js"><link rel="prefetch" href="/assets/js/25.46b3ab9e.js"><link rel="prefetch" href="/assets/js/26.a300c330.js"><link rel="prefetch" href="/assets/js/27.aa95a34a.js"><link rel="prefetch" href="/assets/js/28.1379fba5.js"><link rel="prefetch" href="/assets/js/29.ed2fd094.js"><link rel="prefetch" href="/assets/js/30.1cf5c075.js"><link rel="prefetch" href="/assets/js/31.707ee8c1.js"><link rel="prefetch" href="/assets/js/32.6cb23a99.js"><link rel="prefetch" href="/assets/js/33.f6aa3340.js"><link rel="prefetch" href="/assets/js/34.274ba06d.js"><link rel="prefetch" href="/assets/js/35.a4abf573.js"><link rel="prefetch" href="/assets/js/36.b0bb1a8c.js"><link rel="prefetch" href="/assets/js/37.a76af20e.js"><link rel="prefetch" href="/assets/js/38.9cfafe24.js"><link rel="prefetch" href="/assets/js/39.2cfff7e8.js"><link rel="prefetch" href="/assets/js/40.229f5d3d.js"><link rel="prefetch" href="/assets/js/41.f09ea6ba.js"><link rel="prefetch" href="/assets/js/42.b1c288ed.js"><link rel="prefetch" href="/assets/js/43.399440ed.js"><link rel="prefetch" href="/assets/js/44.2353b402.js"><link rel="prefetch" href="/assets/js/45.c46ff05f.js"><link rel="prefetch" href="/assets/js/46.acb62d8d.js"><link rel="prefetch" href="/assets/js/47.28fa9043.js"><link rel="prefetch" href="/assets/js/48.2e4aa712.js"><link rel="prefetch" href="/assets/js/49.c5b98afb.js"><link rel="prefetch" href="/assets/js/50.efed2333.js"><link rel="prefetch" href="/assets/js/51.d0145f09.js"><link rel="prefetch" href="/assets/js/52.51d6927e.js"><link rel="prefetch" href="/assets/js/53.1504af38.js"><link rel="prefetch" href="/assets/js/54.d4e577ae.js"><link rel="prefetch" href="/assets/js/55.1f9c27b0.js"><link rel="prefetch" href="/assets/js/56.8dd81906.js"><link rel="prefetch" href="/assets/js/57.235aa13f.js"><link rel="prefetch" href="/assets/js/58.86ab6cec.js"><link rel="prefetch" href="/assets/js/59.b35b7555.js"><link rel="prefetch" href="/assets/js/60.d23c6e8e.js"><link rel="prefetch" href="/assets/js/61.6ed29488.js"><link rel="prefetch" href="/assets/js/62.b06ce067.js"><link rel="prefetch" href="/assets/js/63.53c47f8c.js"><link rel="prefetch" href="/assets/js/64.a07662b1.js"><link rel="prefetch" href="/assets/js/65.666dc5d8.js"><link rel="prefetch" href="/assets/js/66.41eed6c1.js"><link rel="prefetch" href="/assets/js/67.0884e779.js"><link rel="prefetch" href="/assets/js/68.128f735a.js"><link rel="prefetch" href="/assets/js/69.09d1f95e.js"><link rel="prefetch" href="/assets/js/70.e94b7664.js"><link rel="prefetch" href="/assets/js/71.445a8fb0.js"><link rel="prefetch" href="/assets/js/73.85b678ef.js"><link rel="prefetch" href="/assets/js/74.a5352a2b.js"><link rel="prefetch" href="/assets/js/75.477396c4.js"><link rel="prefetch" href="/assets/js/76.98b2b77d.js"><link rel="prefetch" href="/assets/js/77.53678b71.js"><link rel="prefetch" href="/assets/js/78.14c0b510.js"><link rel="prefetch" href="/assets/js/79.9c97255b.js"><link rel="prefetch" href="/assets/js/80.ac99d13c.js"><link rel="prefetch" href="/assets/js/81.96d4efe5.js"><link rel="prefetch" href="/assets/js/82.9d7ee1d5.js"><link rel="prefetch" href="/assets/js/83.a396d08d.js"><link rel="prefetch" href="/assets/js/84.72e01c42.js"><link rel="prefetch" href="/assets/js/85.7548261b.js"><link rel="prefetch" href="/assets/js/86.bf4bb84b.js"><link rel="prefetch" href="/assets/js/87.94fd6a22.js"><link rel="prefetch" href="/assets/js/88.c9f369c3.js"><link rel="prefetch" href="/assets/js/89.3cae8c82.js"><link rel="prefetch" href="/assets/js/90.cda0ddf8.js"><link rel="prefetch" href="/assets/js/91.8596c56d.js"><link rel="prefetch" href="/assets/js/92.78612bf9.js"><link rel="prefetch" href="/assets/js/93.a5f9769b.js"><link rel="prefetch" href="/assets/js/94.65ab03b6.js"><link rel="prefetch" href="/assets/js/95.3bf11943.js"><link rel="prefetch" href="/assets/js/96.c6f01a4e.js"><link rel="prefetch" href="/assets/js/97.da276862.js"><link rel="prefetch" href="/assets/js/98.76da3e3c.js"><link rel="prefetch" href="/assets/js/99.653d9f9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eef050b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div itemscope="itemscope" itemtype="https://schema.org/WebPage" class="layout-main"><meta itemprop="name" content="MY TITLE"> <meta itemprop="alternateName" content="MY TITLE"> <meta itemprop="url" content="https://MY_DOMAIN.COM"> <nav aria-label="Navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="container nav-mobile" style="display:none;"><span itemprop="headline" class="nav-mobile__title">传送门</span> <ul class="nav-mobile__list"><li class="nav-mobile__item"><a href="/about/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">关于我</span></a></li><li class="nav-mobile__item"><a href="/categories/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">类别</span></a></li><li class="nav-mobile__item"><a href="/contact/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">联系我</span></a></li><li class="nav-mobile__item"><a href="/categories/Agile_QA.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Agile QA</span></a></li><li class="nav-mobile__item"><a href="/categories/Quality.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Quality</span></a></li><li class="nav-mobile__item"><a href="/categories/automation_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">automation test</span></a></li><li class="nav-mobile__item"><a href="/categories/performance_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">performance test</span></a></li><li class="nav-mobile__item"><a href="/categories/vuejs.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Vue.js</span></a></li></ul></nav> <div class="container-fluid wrapper-body__nm"><header itemscope="itemscope" itemtype="https://schema.org/Organization" class="header"><!----> <div class="row header-top"><div class="column xs-33 sm-20"><div class="hamburguer header-top__hamburguer"><div class="hamburguer__wrapper"><span class="hamburguer__line"></span> <span class="hamburguer__line"></span> <span class="hamburguer__line"></span></div></div> <!----></div> <div class="column xs-33 sm-60"><div class="header__logo"><a href="/" itemprop="url" class="header-top-logo__link router-link-active"><img itemprop="logo" src="/ktquez-play-logo.png" srcset="/ktquez-play-logo.png 1x, /ktquez-play-logo@2x.png 2x" alt="Logo in 3 colors in play format"></a></div> <meta itemprop="name" content="MY TITLE"> <meta itemprop="sameAs" content="https://www.github.com/qileilove"></div> <div class="column xs-33 sm-20"><div class="search header-top__search"><!----> <span class="icon search__icon">search</span></div> <div class="switch-bw header-top__toggle"><span class="switch-bw__text">
+    打开黑夜模式，体验黑夜的魅力
+  </span> <label for="switch-bw" class="switch-bw__label"><input type="checkbox" id="switch-bw" name="switch-bw" aria-labelledby="switch-bw-text" class="switch-bw__input"> <span class="switch-bw__ball"></span> <span id="switch-bw-text" hidden="hidden">switch to black or white</span></label></div></div></div></header> <main id="main" itemscope="itemscope" itemtype="https://schema.org/Blog" class="main-page"><div><a href="#main" class="vue-skip-to">跳过主内容</a> <div><div class="page page__full row justify-right"><article itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting" class="column xs-100 page__full__box box-default"><meta itemprop="mainEntityOfPage" content="/posts/202012/%E4%BD%BF%E7%94%A8NightWatchJS%E8%BF%90%E8%A1%8C%E9%A6%96%E6%AC%A1%E6%B5%8B%E8%AF%95.html"> <header class="page-header page__full-header"><button type="button" class="ui-button reset-button back-button"><span class="icon back-button__icon icon--arrow">arrow</span> <span class="back-button__text">返回</span></button> <div class="page-header__meta"><time datetime="Wed Dec 16 2020 09:00:00 GMT+0800 (China Standard Time)" itemprop="datePublished" class="text">
+                
+            </time> <meta itemprop="dateModified" content="currentPost.updated_at"> <!----></div> <h1 itemprop="name headline" class="page-header__title">使用NightWatchJS运行首次测试</h1> <div class="page-header-cat"><nav class="page-header-cat__nav"><ul class="page-header-cat__list"><li class="page-header-cat__item"><a href="/categories/Agile_QA.html" itemprop="keywords" class="page-header-cat__link meta-text">
+                  Agile QA
+                </a></li></ul></nav></div> <!----></header> <div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject" class="post-cover"><picture> <img itemprop="url" src="/images/posts/2020/12/95.png" class="post-cover__image cover"></picture></div> <!----> <section class="page-content page__full-content"><div class="row"><div class="column no-pad-l sm-50 post-share"><div class="observer"><!----> <!----> <!----></div></div> <!----></div> <div class="row"><div class="column no-pad-l md-75 xl-67 post-content"><div class="post-content__box-player"><!----></div> <div class="post-content__excerpt"><!----></div> <div class="post-content__table-contents"><div class="table-contents"><h3 id="table-of-content" class="table-contents__title">文本</h3> <nav><ol class="table-contents__list"><!----><!----><!----><!----></ol></nav></div></div> <div itemprop="articleBody"><div class="content custom"><h1 id="使用nightwatchjs运行首次测试"><a href="#使用nightwatchjs运行首次测试" aria-hidden="true" class="header-anchor">#</a> 使用NightWatchJS运行首次测试</h1> <p>在自动化测试领域，Selenium仍然是最受欢迎的工具。 由于敏捷开发和DevOps支持较短的开发周期和更快的发布，公司渴望与开发同等地采用正确的自动化测试策略，并确保高质量的最终产品。 加快自动化测试的速度意味着选择一个计划，该计划有助于以最少的维护和精力来处理重复性工作并优化任务。 这就是实现正确的测试自动化框架的重要性。
+市场上有各种测试自动化框架可供选择。 自2014年发布以来，Nightwatch.js便是一个如此受青睐的基于JavaScript的框架。该博客将为您提供指导，以帮助您开始Nightwatch.js自动化之旅。
+从简要概述开始，我们在此Nightwatch.js教程中的主要重点是将Nightwatch.js设置和配置到您的系统中。 最后，您将能够在Nightwatch.js Selenium中编写您的第一个测试。
+让我们开始吧！
+什么是Nightwatch.js？
+Nightwatch.js是用于基于浏览器的Web应用程序和网站的开源自动测试框架。 它使用Node.js运行时编写，并使用W3C WebDriver API（以前称为Selenium WebDriver）与各种浏览器进行交互，以对DOM元素执行命令和断言。
+为什么Nightwatch.js如此受欢迎？
+Nightwatch.js受欢迎的原因在于其开箱即用的功能。 使Nightwatch.js如此受欢迎的一些值得注意的功能包括：
+易于使用–使用简洁明了的语法，可以快速有效地编写代码。
+内置测试运行器–带有内置命令行测试运行器套件，该套件具有Grunt支持，可用于执行Selenium自动化测试。
+页面对象模型–支持CSS和XPath定位器，使浏览器自动化更易于管理。
+灵活性–支持单元，集成以及端到端测试。
+Selenium服务器支持–它可以自动控制独立的Selenium服务器或各种浏览器Web驱动程序。
+集成–为应用程序测试提供单个集成解决方案，从而消除了对第三方软件的依赖。
+支持云服务–与LambdaTest等基于云的测试平台兼容。
+持续集成–支持Jenkins，TeamCity等软件，协助开发人员持续构建和测试软件。
+请查看最佳JavaScript测试框架！
+Nightwatch.js安装和本地设置
+现在该进行Nightwatch.js自动化的安装和环境设置了。 我们将从一开始就逐步进行。 但是，在安装Nightwatch.js之前，请确保您的系统已预先配备了以下组件。
+先决条件：
+a）Java
+使用以下命令检查系统中是否已经安装了Java：
+如果不是，请从此处安装适合您计算机的最新JDK。
+b）Node.js和NPM
+使用以下命令检查系统中是否已安装Node.js：
+如果不是，请从此处安装最新的LTS版本。
+注意：NPM将与Node.js一起安装。 因此，无需单独安装。
+安装后，使用以下命令验证Node.js和npm的版本：
+c）Visual Studio代码
+在这里，我们使用Visual Studio Code作为IDE。 您可以选择任何其他IDE。
+如果尚未安装，则可以从此处下载VSC。
+安装Nightwatch.js和项目设置
+现在让我们继续Nightwatch.js的安装和基本项目配置。 按照承诺，我们将逐步进行。
+步骤1：在系统中所需的位置为项目创建一个文件夹。 在您的IDE中打开文件夹。
+步骤2：现在，让我们使用package.json文件初始化我们的项目。
+在Visual Studio Code中打开终端。
+验证它是否指向项目文件夹位置。
+输入命令：
+npm初始化
+系统将要求您填写项目详细信息。 您可以填充它们，也可以保留为空白。</p> <p><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image4-2.png" alt>
+您还将注意到package.json文件在您的项目文件夹中创建，其中包含所有项目配置详细信息。
+提示：使用以下命令可以节省一些时间，以生成默认的package.json文件，而不会出现任何问题。
+npm init -y
+y代表“是”。
+我们已经成功创建了package.json文件。	
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image8-2-1.png" alt>
+步骤3：将Nightwatch.js安装到我们的项目中。</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev nightwatch
+</code></pre></div><p>该命令将在目录中添加“ node_modules”文件夹，然后下载Nightwatch.js以将其另存为package.json中的devDependency。
+您还将注意到，“ package-lock.json”文件也已创建。 该文件用于用版本号锁定所有依赖项，以便在另一个系统中设置代码会更容易。
+提示：您也可以全局安装Nightwatch.js，以便位于系统内任何位置的所有项目都可以访问它。</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev nightwatch -g
+</code></pre></div><p>g代表“全局”。
+步骤4：现在让我们安装浏览器Web驱动程序。
+a）ChromeDriver</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev chromedriver
+</code></pre></div><p>b）GeckoDriver（Firefox）</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev geckodriver
+</code></pre></div><p>还是为什么不一次性安装它们呢？</p> <div class="language- extra-class"><pre class="language-text"><code>$ npm i nightwatch geckodriver chromedriver --save-dev
+</code></pre></div><p>提示：或者，我们可以将步骤4和5合并为一个步骤。 使用命令：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install --save-dev nightwatch chromedriver
+</code></pre></div><p>要注意的是，尽管较早的Nightwatch版本（v0.9及更低版本）需要Selenium Server，但从1.0版本开始不再需要Selenium。
+设置现已完成！ 让我们现在运行一些演示测试！
+运行演示测试
+您是否知道Nightwatch.js随附了一些示例测试？ 我们可以尝试运行吗？ 这就是我们Nightwatch.js教程的这一部分的全部内容。
+让我们开始-
+步骤1：转到文件夹“ node_modules / nightwatch / examples / tests /”。
+步骤2：在“测试”文件夹下，您可以找到一些示例测试。
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image7-3-1.png" alt>
+步骤3：让我们运行第一个示例测试“ ecosia.js”。
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/nightwatch.png" alt>
+这是一个简单，直接的程序，其中-
+启动默认浏览器
+打开搜索引擎“ Ecosia”
+在搜索栏中输入“守夜人”
+验证搜索结果。
+我们去吧！
+步骤4：在终端中运行命令：</p> <div class="language- extra-class"><pre class="language-text"><code>./node_modules/.bin/nightwatch node_modules/nightwatch/examples/tests/ecosia.js
+</code></pre></div><p>在这里，“ ./ node_modules / .bin / nightwatch”代表nightwatch.js可执行文件的路径。
+“ node_modules / nightwatch / examples / tests / ecosia.js”给出了测试文件的路径。
+步骤5：执行代码，测试开始运行。 将启动默认浏览器，并且测试成功执行。</p> <div class="language- extra-class"><pre class="language-text"><code>https://www.lambdatest.com/blog/wp-content/uploads/2020/12/gets-executed.png
+</code></pre></div><p>步骤6：在终端上观察测试运行结果。</p> <div class="language- extra-class"><pre class="language-text"><code>https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image11-1-1.png
+</code></pre></div><p>恭喜！ 现在已在系统中成功配置了Nightwatch。
+适用于自动化测试初学者的Nightwatch.js教程-包含示例
+编写第一个Nightwatch.js自动化测试脚本
+在上一节中，我们能够成功运行演示测试。 但是我们需要编写自己的脚本，不是吗？
+现在我们已经有了基本的操作，是时候动手了。 在本节中，我们将使用Nightwatch.js自动化来编写和运行我们的第一个测试文件。 让我们检查一下需要完成的配置。
+构型
+我们的目标是使用项目基本目录中的“ npm test”命令来运行测试文件。 另外，在示例中，我们将Chrome设置为默认浏览器。 但是请随意使用您选择的浏览器。
+现在，让我们逐步开始。
+步骤1：让我们在根目录中创建两个文件夹-“ tests”（用于保存测试文件）和“ reports”（报告），在每次运行测试后将在其中存储报告。
+（您可以提供您选择的任何文件夹名称。但是，应将其正确映射到在步骤3中将要讨论的nightwatch.json文件中。）
+步骤2：在package.json文件中，“scripts – test” to “nightwatch”.</p> <div class="language- extra-class"><pre class="language-text"><code>123 “scripts”: {  “test”: “nightwatch”}
+
+123456789101112131415161718 {    &quot;src_folders&quot; : &quot;tests&quot;,    &quot;output_folder&quot; : &quot;reports&quot;,     &quot;webdriver&quot; : {        &quot;start_process&quot;: true,        &quot;server_path&quot;: &quot;node_modules/chromedriver/lib/chromedriver/chromedriver.exe&quot;,        &quot;host&quot;: &quot;localhost&quot;,        &quot;port&quot;: 4444      },      &quot;test_settings&quot; : {        &quot;default&quot; : {            &quot;desiredCapabilities&quot; : {                &quot;browserName&quot; : &quot;chrome&quot;                          }                     }      }}
+</code></pre></div><p>“ nightwatch.json”是nightwatch测试运行程序二进制文件期望的配置文件。
+让我们仔细看看上述“ nightwatch.json”的代码结构。
+src_folders：指示包含测试套件的位置。 您还可以提供一系列文件夹。 如果未指定，则应像在演示测试中一样将内联的测试位置作为第二个参数传递给测试运行程序。
+output_folder：指示保存测试报告的位置，即JUnit报告文件，XML报告，测试日志，硒日志，屏幕截图，视频日志，网络日志等。
+webdriver：包含与WebDriver相关的配置选项的对象。
+start_process：一个布尔值，指示一旦我们开始测试，夜间监视器将在后台作为子进程自动启动/停止webdriver实例。
+server_path：在这里，我们给出了chrome驱动程序可执行文件的路径。 仅在启用start_process时有用。
+主持人：我们正在使用本地主机运行测试。 当WebDriver服务在另一台计算机上运行时，主要需要它。
+port：WebDriver服务将在其上侦听和/或Nightwatch将尝试在其上连接的端口号。
+测试设置：定义我们要使用的浏览器。
+您也可以创建“ nightwatch.conf.js”进行配置。 如果项目中同时存在这两个文件，则nightwatch.conf.js文件的优先级将高于nightwatch.json。
+步骤4：完成配置。 现在让我们编写第一个测试。	
+编写Nightwatch.js自动化测试？
+我们已经创建了一个“测试”文件夹。 现在，我们将在此文件夹中创建测试文件。 Nightwatch测试运行程序会将其中的每个文件作为测试套件加载。 开始吧！
+步骤1：创建一个测试文件，并将其命名为– testfile1.js
+步骤2：让我们创建测试结构。</p> <p>module.exports = { }
+步骤3:在每个文件中，测试运行器将查找导出的不同密钥。关键字基本上是测试用例名称。每个键都映射到一个函数，其中浏览器实例将作为参数传递。</p> <p>module.exports = {&quot;Get URL and title&quot; : function(browser) {}
+步骤4：在此函数中，我们编写测试代码。 让我们看看下面的代码段：</p> <div class="language- extra-class"><pre class="language-text"><code> module.exports = {    &quot;Get URL and title&quot; : function(browser) {     browser     .url(&quot;http://www.google.com&quot;)     .assert.urlContains(&quot;google&quot;)     .assert.title(&quot;Google&quot;)     .pause(3000);       }}
+</code></pre></div><p>在这里，我们尝试启动Google并验证输出页面的标题和URL与预期结果匹配。 简单明了。
+现在让我们了解代码。
+url（）–导航到特定的URL。
+urlContains（）–检查当前URL是否包含给定值。
+title（）–检查页面标题是否等于给定值。
+pause（）–在给定时间（以毫秒为单位）中暂停测试。
+断言–断言失败时，测试将结束，并跳过所有其他断言。
+第5步：现在该运行代码了。 转到终端。 验证您是否在项目基本目录中。 输入以下命令：
+npm test
+该测试将开始运行，并将启动浏览器。
+npm test
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image13-1-1.png" alt> <img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/image9-2.png" alt>
+所有的断言都被传递。 恭喜，您已经成功编写了第一个测试代码！
+步骤6：检出在“报告”文件夹中生成的报告。
+在这个示例测试案例中，我们仅探讨了一些命令。 请访问官方API文档，随意探索更多内容。
+使用Nightwatch.js进行并行测试
+我们可以使用“ nightwatch.json”文件中的快速简单配置在Nightwatch.js中启用并行测试。</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;test_workers&quot;: {        &quot;enabled&quot;: true,        &quot;workers&quot;: &quot;auto&quot;      },
+</code></pre></div><p>通过启用“ test_workers”为真，我们启用了并行测试。 现在来看一下步骤：
+步骤1：将上述代码添加到“ nightwatch.json”文件中。
+步骤2：在“ tests”文件夹中创建另一个测试文件，以便与第一个测试文件并行运行。
+步骤3：在终端中，输入命令：
+npm测试
+步骤4：启动两个浏览器窗口，并行执行测试文件。
+步骤5：执行后，观察生成的报告。
+跨浏览器测试&amp;跨设备的测试覆盖范围</p> <p>通过本Nightwatch.js教程的前面部分，我们对Nightwatch.js的设置和在本地计算机上的测试执行有了详细的了解。 我们还创建了第一个测试文件，进行了并行测试，并生成了报告。
+但是要在竞争激烈的市场中保持领先地位，我们作为测试人员的责任是确保在所有情况下应用程序的质量，即应用程序在所有平台，浏览器和设备上均应表现出预期的性能而不会崩溃。 这是术语“测试覆盖率”和“跨浏览器测试”出现的地方。
+为了利用测试覆盖率，基于云的解决方案因各种优点而被公司广泛采用：
+与购买基础设施相比，投资成本低。
+提供对数百种设备和平台组合的访问。
+将支持扩展到旧的和过时的浏览器版本以及OS设备
+无需在本地进行设置，安装或维护。
+可扩展性。
+当涉及到分布式测试执行时，Selenium Grid总是一个不错的选择。 它具有同时在不同版本的浏览器和不同操作系统上运行测试用例的能力。
+因此，结合使用Selenium Grid和正确的基于云的解决方案提供商进行跨浏览器兼容性测试是可以确保质量的最佳策略。 现在让我们看看如何使用LambdaTest提供的远程Selenium Grid执行自动浏览器测试。
+使用Selenium Grid Cloud执行测试
+LambdaTest作为可靠的在线Selenium Grid在线提供商已受到全球100,000家公司的信任，可满足其跨浏览器测试的需求。 LambdaTest可让您访问移动和台式机的2000多种浏览器，以帮助您在自动浏览器测试期间获得最大的测试覆盖率。
+您甚至可以将并行测试与Selenium自动化测试以及我们开放的Selenium API结合起来，以帮助您轻松地提取通过LambdaTest执行Selenium脚本的测试报告。
+现在，让我们尝试使用用于LambdaTest的Selenium Grid云的远程WebDriver执行上述测试用例。 您可以通过一些简单的步骤来实现此目的，而对本地设置的现有脚本所做的更改很少。 让我们逐步研究它。
+步骤1：我们需要通过所需的功能类将浏览器和环境详细信息传递给LambdaTest Selenium Grid。 与本地设置不同，现在我们可以灵活选择所需的精确设置。
+LambdaTest提供了一个有用的工具，可以根据我们想要的组合生成所需的功能。 访问LambdaTest所需功能页面以生成它们。
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/LambdaTest-Desired-Capabilities-1.png" alt>
+在这种情况下，nightwatch.json中所需的功能类将如下所示：</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;desiredCapabilities&quot;: {       &quot;build&quot;:&quot;Nightwatch-Selenium--Test&quot;,       &quot;platform&quot; : &quot;Windows 10&quot;,       &quot;browserName&quot; : &quot;Chrome&quot;,       &quot;version&quot; : &quot;87.0&quot;,       &quot;selenium_version&quot; : &quot;3.13.0&quot;,        &quot;geoLocation&quot; : &quot;IN&quot;,        &quot;chrome.driver&quot; : &quot;87.0&quot;,    }
+</code></pre></div><p>步骤2：现在，您需要获取唯一的访问令牌和用户名。
+步骤3：登录LambdaTest或创建您的帐户。 将为您创建一个唯一的访问令牌。
+该令牌用作将本地脚本与LambdaTest平台链接的秘密密钥。
+有3种方法可以找到它：
+如果已经登录，则可以从“功能”生成器页面中获取它
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/Capabilities-generator.png" alt>
+您也可以从“个人资料”部分获取详细信息。
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/Profile-section.png" alt></p> <p>或在自动化仪表板页面中，单击右上角的键按钮。
+<img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/unnamed-4-1.png" alt>
+步骤4：将以下代码段粘贴到nightwatch.conf.js文件中。 （如果尚未创建，则可以在根目录中创建此文件）
+在这里，我们声明用于测试的访问密钥，用户名，主机和端口的用户配置。</p> <div class="language- extra-class"><pre class="language-text"><code> module.exports = (function(settings) {    console.log(settings[&quot;test_settings&quot;][&quot;default&quot;][&quot;username&quot;])    if (process.env.LT_USERNAME) {      settings[&quot;test_settings&quot;][&quot;default&quot;][&quot;username&quot;] = process.env.LT_USERNAME;    }    if (process.env.LT_ACCESS_KEY) {      settings[&quot;test_settings&quot;][&quot;default&quot;][&quot;access_key&quot;] = process.env.LT_ACCESS_KEY;    }    if (process.env.SELENIUM_HOST) {      settings.selenium.host = process.env.SELENIUM_HOST;    }    if (process.env.SELENIUM_PORT) {      settings.selenium.host = process.env.SELENIUM_PORT;    }    return settings;  })(require('./nightwatch.json'));
+
+</code></pre></div><p>步骤5：配置nightwatch.json文件。 由于我们使用的是LambdaTest，为什么我们不进行跨多个平台的跨浏览器测试？
+在此代码中，我们配置脚本在3种浏览器（Windows，macOS和2个不同平台上的Chrome，Firefox和Safari）上运行。
+查看下面的代码，让我们研究一下对现有文件进行的必要更改和添加：</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;src_folders&quot; : &quot;tests&quot;,  &quot;output_folder&quot; : &quot;reports&quot;,   &quot;test_workers&quot;: {    &quot;enabled&quot;: true,    &quot;workers&quot;: &quot;auto&quot;  },  &quot;selenium&quot; : {    &quot;start_process&quot; : false,    &quot;server_path&quot; : &quot;&quot;,    &quot;log_path&quot; : &quot;&quot;,    &quot;host&quot; : &quot;hub.lambdatest.com&quot;,    &quot;port&quot; : 80,    &quot;cli_args&quot; : {    &quot;webdriver.chrome.driver&quot; : &quot;&quot;,    &quot;webdriver.ie.driver&quot; : &quot;&quot;,    &quot;webdriver.firefox.profile&quot; : &quot;&quot;    }  },  &quot;test_settings&quot; : {    &quot;default&quot; : {    &quot;launch_url&quot; : &quot;http://google.com&quot;,    &quot;selenium_port&quot;  : 80,    &quot;selenium_host&quot;  : &quot;https://lambdatest.com&quot;,    &quot;silent&quot;: false,    &quot;screenshots&quot; : {        &quot;enabled&quot; : true,        &quot;path&quot; : &quot;&quot;    },    &quot;username&quot; : &quot;haritagr16&quot;,    &quot;access_key&quot; : &quot;123456789&quot;,     &quot;skip_testcases_on_fail&quot;: false,        &quot;desiredCapabilities&quot;: {       &quot;build&quot;:&quot;Nightwatch-Selenium--Test&quot;,       &quot;platform&quot; : &quot;Windows 10&quot;,       &quot;browserName&quot; : &quot;Chrome&quot;,       &quot;version&quot; : &quot;87.0&quot;,       &quot;selenium_version&quot; : &quot;3.13.0&quot;,       &quot;visual&quot;:true,        &quot;video&quot;:true,        &quot;console&quot;:true,        &quot;geoLocation&quot; : &quot;IN&quot;,        &quot;chrome.driver&quot; : &quot;87.0&quot;,        &quot;network&quot;:true    }    },    &quot;chrome&quot;: {    &quot;desiredCapabilities&quot;: {        &quot;platform&quot;: &quot;Windows 10&quot;,        &quot;browserName&quot;: &quot;chrome&quot;,        &quot;version&quot;: &quot;87.0&quot;    }    },    &quot;safari&quot; : {    &quot;desiredCapabilities&quot;: {        &quot;platform&quot;: &quot;macos 10.13&quot;,        &quot;browserName&quot;: &quot;safari&quot;,        &quot;version&quot;: &quot;11.0&quot;    }    },    &quot;firefox&quot; : {    &quot;desiredCapabilities&quot;: {        &quot;platform&quot;: &quot;win10&quot;,        &quot;browserName&quot;: &quot;firefox&quot;,        &quot;version&quot;: &quot;60&quot;    }    },    &quot;edge&quot; : {    &quot;desiredCapabilities&quot;: {        &quot;platform&quot;: &quot;Windows 10&quot;,        &quot;browserName&quot;: &quot;MicrosoftEdge&quot;,        &quot;version&quot;: &quot;17.0&quot;    }        }  }}
+</code></pre></div><p>传递您的访问令牌和用户详细信息。
+为所有浏览器提供所需功能。
+设置与LambdaTest相对应的主机名。
+（可选）我们还启用了报告格式，例如视频录制，控制台，网络日志等。
+下面给出了更详细的解释，但可以直接跳到步骤6。
+我们使用了其他参数来配置“ nightwatch.json”，以进行基于云的跨浏览器测试。 他们是：
+selenium –包含与Selenium Server相关的配置选项的对象。 如果不使用“ selenium”，则应该设置“ webdriver”选项（就像我们在本地设置中所做的那样）。 从Nightwatch 1.0开始，仅在针对网格设置或LambdaTest之类的云测试服务进行测试时才需要Selenium。
+cli_args –要传递给Selenium进程的CLI arg列表，主要是浏览器驱动程序。
+test_settings：
+静默–是否显示来自WebDriver或Selenium服务器的扩展HTTP通信命令日志。
+wantedCapabilities –一个对象，用于指定浏览器名称以及其他功能。
+用户名和access_key –通常仅用于云测试Selenium服务。 如果服务器需要凭据，则这些值将用于计算Authorization标头。
+步骤6：在package.json中，更改“脚本–测试”参数值。
+这很重要，因为在这里我们指定需要运行测试的浏览器。
+123 &quot;scripts&quot;: {    &quot;test&quot;: &quot;./node_modules/.bin/nightwatch -e firefox,safari,chrome tests&quot;  }</p> <p>步骤7：执行测试。
+npm测试
+代码开始运行，并且可以在终端中查看日志。</p> <p><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/nightwatchJS.png" alt></p> <p>要观察实时运行状态，请转到LambdaTest中的自动化仪表板。</p> <p><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/Automation-dashboard-1.png" alt></p> <p><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/Automation-dashboard-1.png" alt>
+我们可以从自动化日志中分析各个测试运行报告。</p> <p><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/12/Automation-Logs.png" alt>
+我们使用LambdaTest提供的自动跨浏览器测试解决方案，通过无忧的体验成功运行了测试用例！
+结论
+Nightwatch.js是最受需求的基于Selenium Javascript的自动化测试框架之一，以其简单性和集成功能而闻名。 在此博客中，我们研究了Nightwatch.js的安装和设置，以及有关配置的详细演练。 此外，我们还通过采用测试覆盖率概念和跨浏览器测试来利用自动化测试。
+希望通过此Nightwatch.js教程，您可以开始Nightwatch.js自动化之旅。 如果您希望通过在各种平台或浏览器或版本中释放覆盖范围来优化Web应用程序质量，请随时探索LambdaTest平台。
+测试愉快！</p> <h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3> <p>石头 磊哥 seven 随便叫</p> <h3 id="company"><a href="#company" aria-hidden="true" class="header-anchor">#</a> company</h3> <p>thoughtworks（离职了。。。。）</p> <p>大家好，本人不才，目前依旧混迹于thoughtworks，做着一名看起来像全栈的QA，兴趣爱好前端，目前是thoughtworks 西安QA社区的leader，如果有兴趣分享话题，或者想加入tw，可以找我</p> <h3 id="roles"><a href="#roles" aria-hidden="true" class="header-anchor">#</a> roles</h3> <p>QA（营生） dev（front-end dev 兴趣爱好）</p> <h3 id="联系方式"><a href="#联系方式" aria-hidden="true" class="header-anchor">#</a> 联系方式</h3> <p>如果想转载或者高薪挖我 请直接联系我 哈哈</p> <h4 id="wechat"><a href="#wechat" aria-hidden="true" class="header-anchor">#</a> wechat:</h4> <p>qileiwangnan</p> <h4 id="email"><a href="#email" aria-hidden="true" class="header-anchor">#</a> email:</h4> <p>qileilove@gmail.com</p></div></div></div> <div class="column no-pad-r sm-25 xl-33 xsNone smNone post-sidebar"><div class="bizu box-default post-sidebar__bizu bizu--vertical"><div class="bizu-image"><span class="bizu-close">×</span> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener"><img src="/general/web-development.png" alt="Illustration of a user studying online" class="bizu-image__image"></a></div> <div class="bizu-info"><a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__text">
+      The most complete course of Vue.js from Udemy, including Vuex and Vue-router with a promotional price not to be missed.
+    </a> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__by">
+      udemy.com
+    </a></div></div></div> <aside class="column xs-100"><hr class="divider"> <div><div class="observer"><!----> <!----> <!----></div></div> <hr class="divider"> <section class="post-content__disqus"><h3>想给我说点什么</h3> <!----></section></aside></div></section></article></div> <!----> <aside class="container main"></aside></div> <!----> <div class="elevator"><a class="elevator__link"><span class="icon elevator__icon">greaterthan</span></a></div> <!----></div></main> <footer class="footer"><div class="footer-box1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 161" class="footer-box__shape"><path d="M-11.925-4809v-154.746c40.454,19.75,273.683,130.936,420.544,142.612,161.25,12.821,339.978-42.709,521.543-86.3,169.82-40.769,395.43,29.2,423.912,38.429v60Z" transform="translate(11.926 4970)"></path></svg></div> <div class="footer-box2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 246" class="footer-box__shape"><path d="M-1505.5-4725.5v-238.1c8.149-3.133,18.138-5.059,29.672-5.9h30.954c201.21,11.667,696.6,224.535,855.572,236.458,205.129,15.385,287.179-164.1,432.047-175.625a42.381,42.381,0,0,1,16.756,1.857V-4725.5Z" transform="translate(1506 4971)"></path></svg> <ul class="footer-social__list"><li class="footer-social__item"><a href="https://www.github.com/qileilove" target="_blank" rel="noopener external" title="Follow us on Facebook"><span class="icon footer-social__icon">github</span></a></li></ul> <div class="footer-newsletter"><!----></div></div> <section class="footer-box3"><div class="row"><div class="column sm-50 footer-card"><div class="observer"><div class="spinner observer__spinner"><div class="double-bounce1"></div> <div class="double-bounce2"></div></div> <!----> <!----></div></div> <div class="column sm-50 footer-nav"><div class="row justify-right"><div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--1"><h2 class="meta-text title">Qi Lei的blog</h2> <nav class="footer-nav1"><ul><li class="footer-nav1__item"><a href="/about/">关于我</a> <!----></li><li class="footer-nav1__item"><a href="/categories/">类别</a> <!----></li><li class="footer-nav1__item"><a href="/contact/">联系我</a> <!----></li></ul></nav></div> <div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--2"><h2 class="meta-text title">社交群</h2> <nav class="footer-nav2"><ul><li class="footer-nav2__item"><!----> <!----></li></ul></nav></div></div></div> <div class="column sm-100 footer-copy">2019 © Qi Lei - 
+        <a href="https://vuepress.vuejs.org/" rel="noopener" target="_blank">
+          MADE WITH VUEPRESS
+        </a></div></div> <span class="shapes shapes--circle" style="left: 3%; top: -20%"></span> <span class="shapes shapes--primary shapes--color3" style="left: 30%; top: -15%"></span> <span class="shapes shapes--primary" style="left: 13%; top: -80%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle shapes--color4" style="left: 40%; top: 200px"></span> <span class="shapes shapes--primary" style="left: 15%; bottom: 10%; transform: rotate(75deg)"></span> <span class="shapes shapes--circle shapes--color3" style="right: 50%; top: 30%"></span> <span class="shapes shapes--primary" style="right: 20%; top: -100%"></span> <span class="shapes shapes--circle" style="right: 10%; top: -20%"></span> <span class="shapes shapes--color4" style="right: 35%; top: -20%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle" style="left: 40%; top: -50%"></span> <span class="shapes shapes--color3" style="right: 30%; top: 20%"></span> <span class="shapes shapes--circle shapes--primary" style="right: 30%; bottom: 20%"></span></section></footer></div> <!----> <!----></div></div>
+    <script src="/assets/js/app.152cc865.js" defer></script><script src="/assets/js/12.22dc2157.js" defer></script><script src="/assets/js/3.72f65101.js" defer></script><script src="/assets/js/11.9ce5aa47.js" defer></script><script src="/assets/js/10.48854263.js" defer></script><script src="/assets/js/15.f87ba54c.js" defer></script><script src="/assets/js/2.8ffb7ac8.js" defer></script><script src="/assets/js/5.69a15828.js" defer></script><script src="/assets/js/6.ca7c455c.js" defer></script><script src="/assets/js/16.7d53733f.js" defer></script><script src="/assets/js/72.f8d8cccd.js" defer></script><script src="/assets/js/7.cc0a13af.js" defer></script><script src="/assets/js/9.bc7d0b68.js" defer></script><script src="/assets/js/13.949cbefc.js" defer></script><script src="/assets/js/4.98ee0f72.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用Nock进行集成测试中的模拟依赖项 | MY TITLE</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-title" content="MY APPLE TITLE">
+  <meta name="theme-color" content="MY COLOR THEME">
+  <meta name="msapplication-navbutton-color" content="MY COLOR THEME">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="coverage" content="WorldWide">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="application-name" content="MY APP NAME">
+  <meta name="msapplication-TileColor" content="MY COLOR THEME">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="msapplication-square70x70logo" content="/favicon/ms-icon-70x70.png">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/favicon/ms-icon-310x310.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ktquez">
+  <meta property="fb:app_id" content="MY FACEBOOK APP ID">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MY SITE NAME">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="360">
+  <meta property="og:image:type" content="image/png">
+  <meta name="google-site-verification" content="MY VERIFICATION KEY">
+  <meta name="msvalidate.01" content="MY VERIFICATION KEY">
+  <meta name="yandex-verification" content="MY VERIFICATION KEY">
+  <link rel="publisher" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="MY URL GOOGLE PLUS">
+  <link rel="author" href="/humans.txt">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon/android-icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff5733">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/" hreflang="en">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/pt/" hreflang="pt-br">
+  <link rel="alternate" href="https://MY_DOMAIN.COM/es/" hreflang="es">
+  <link rel="preconnect" href="https://connect.facebook.net/">
+  <link rel="preconnect" href="https://platform.twitter.com/">
+  <link rel="preconnect" href="https://widget.sndcdn.com/">
+  <link rel="preconnect" href="https://api-widget.soundcloud.com/">
+  <link rel="preconnect" href="https://www.youtube.com/">
+  <link rel="preconnect" href="https://scrimba.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://c.disquscdn.com/">
+  <link rel="preconnect" href="https://disqus.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com/">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+    <meta property="og:image" content="/autores/my.jpeg"><meta name="twitter:image" content="/autores/my.jpeg">
+    <link rel="preload" href="/assets/css/0.styles.eef050b4.css" as="style"><link rel="preload" href="/assets/js/app.152cc865.js" as="script"><link rel="preload" href="/assets/js/12.22dc2157.js" as="script"><link rel="preload" href="/assets/js/3.72f65101.js" as="script"><link rel="preload" href="/assets/js/11.9ce5aa47.js" as="script"><link rel="preload" href="/assets/js/10.48854263.js" as="script"><link rel="preload" href="/assets/js/15.f87ba54c.js" as="script"><link rel="preload" href="/assets/js/2.8ffb7ac8.js" as="script"><link rel="preload" href="/assets/js/5.69a15828.js" as="script"><link rel="preload" href="/assets/js/6.ca7c455c.js" as="script"><link rel="preload" href="/assets/js/16.7d53733f.js" as="script"><link rel="preload" href="/assets/js/73.85b678ef.js" as="script"><link rel="preload" href="/assets/js/7.cc0a13af.js" as="script"><link rel="preload" href="/assets/js/9.bc7d0b68.js" as="script"><link rel="preload" href="/assets/js/13.949cbefc.js" as="script"><link rel="preload" href="/assets/js/4.98ee0f72.js" as="script"><link rel="prefetch" href="/assets/js/1.049577ca.js"><link rel="prefetch" href="/assets/js/100.89072a8f.js"><link rel="prefetch" href="/assets/js/101.6df01df9.js"><link rel="prefetch" href="/assets/js/102.8b3778fc.js"><link rel="prefetch" href="/assets/js/103.cf80daa0.js"><link rel="prefetch" href="/assets/js/104.7f5cfbc5.js"><link rel="prefetch" href="/assets/js/105.1a41d040.js"><link rel="prefetch" href="/assets/js/106.894aaceb.js"><link rel="prefetch" href="/assets/js/107.b1cee0a0.js"><link rel="prefetch" href="/assets/js/108.e43497ce.js"><link rel="prefetch" href="/assets/js/109.760e3a23.js"><link rel="prefetch" href="/assets/js/110.8b1a1236.js"><link rel="prefetch" href="/assets/js/111.189aaa3c.js"><link rel="prefetch" href="/assets/js/112.031d8a39.js"><link rel="prefetch" href="/assets/js/113.2a90f4bc.js"><link rel="prefetch" href="/assets/js/114.3e29483f.js"><link rel="prefetch" href="/assets/js/115.7245418c.js"><link rel="prefetch" href="/assets/js/116.c258bb71.js"><link rel="prefetch" href="/assets/js/117.f9999e64.js"><link rel="prefetch" href="/assets/js/118.72859e3d.js"><link rel="prefetch" href="/assets/js/119.c6c61956.js"><link rel="prefetch" href="/assets/js/120.5771f6ae.js"><link rel="prefetch" href="/assets/js/121.f4fb9923.js"><link rel="prefetch" href="/assets/js/122.bc231bfa.js"><link rel="prefetch" href="/assets/js/123.158cf659.js"><link rel="prefetch" href="/assets/js/124.02ee2194.js"><link rel="prefetch" href="/assets/js/125.4cf4e2c9.js"><link rel="prefetch" href="/assets/js/126.b1eb1604.js"><link rel="prefetch" href="/assets/js/127.42ad2b47.js"><link rel="prefetch" href="/assets/js/128.b4ee2e7f.js"><link rel="prefetch" href="/assets/js/129.635692e9.js"><link rel="prefetch" href="/assets/js/130.3ccb6e65.js"><link rel="prefetch" href="/assets/js/131.edf8785d.js"><link rel="prefetch" href="/assets/js/132.09cf4f81.js"><link rel="prefetch" href="/assets/js/133.922daf3e.js"><link rel="prefetch" href="/assets/js/134.ff091517.js"><link rel="prefetch" href="/assets/js/135.41b865a7.js"><link rel="prefetch" href="/assets/js/136.b47439aa.js"><link rel="prefetch" href="/assets/js/137.ba3b5abe.js"><link rel="prefetch" href="/assets/js/138.a73c97ff.js"><link rel="prefetch" href="/assets/js/139.991c72ef.js"><link rel="prefetch" href="/assets/js/14.74d39783.js"><link rel="prefetch" href="/assets/js/140.6882aef7.js"><link rel="prefetch" href="/assets/js/141.4ca11626.js"><link rel="prefetch" href="/assets/js/142.1855583f.js"><link rel="prefetch" href="/assets/js/143.bb5a5eef.js"><link rel="prefetch" href="/assets/js/144.f93cd7db.js"><link rel="prefetch" href="/assets/js/145.e799e1fe.js"><link rel="prefetch" href="/assets/js/146.289485e5.js"><link rel="prefetch" href="/assets/js/147.116d14ca.js"><link rel="prefetch" href="/assets/js/148.df20648f.js"><link rel="prefetch" href="/assets/js/149.25a21e39.js"><link rel="prefetch" href="/assets/js/150.181ec5c4.js"><link rel="prefetch" href="/assets/js/151.ca39578e.js"><link rel="prefetch" href="/assets/js/152.fb478ca0.js"><link rel="prefetch" href="/assets/js/153.a2e13ef0.js"><link rel="prefetch" href="/assets/js/154.1d947248.js"><link rel="prefetch" href="/assets/js/155.b7dd0ad0.js"><link rel="prefetch" href="/assets/js/156.29d62a38.js"><link rel="prefetch" href="/assets/js/157.d2e78a0e.js"><link rel="prefetch" href="/assets/js/158.4d8fded2.js"><link rel="prefetch" href="/assets/js/159.b75edb71.js"><link rel="prefetch" href="/assets/js/160.95457737.js"><link rel="prefetch" href="/assets/js/161.718d2a68.js"><link rel="prefetch" href="/assets/js/162.9224c1f2.js"><link rel="prefetch" href="/assets/js/163.dbfa40ee.js"><link rel="prefetch" href="/assets/js/164.bd7ad716.js"><link rel="prefetch" href="/assets/js/165.c37947ac.js"><link rel="prefetch" href="/assets/js/166.ae3cbd4d.js"><link rel="prefetch" href="/assets/js/167.9674bc97.js"><link rel="prefetch" href="/assets/js/168.224f67b1.js"><link rel="prefetch" href="/assets/js/169.60b0add8.js"><link rel="prefetch" href="/assets/js/17.4bd7bfb7.js"><link rel="prefetch" href="/assets/js/170.04a5d8a2.js"><link rel="prefetch" href="/assets/js/171.3d24c124.js"><link rel="prefetch" href="/assets/js/172.70f1deef.js"><link rel="prefetch" href="/assets/js/173.8aac40d5.js"><link rel="prefetch" href="/assets/js/174.100043f1.js"><link rel="prefetch" href="/assets/js/175.9bce1f40.js"><link rel="prefetch" href="/assets/js/176.f57b1ec2.js"><link rel="prefetch" href="/assets/js/177.bd11609d.js"><link rel="prefetch" href="/assets/js/178.6cde88fe.js"><link rel="prefetch" href="/assets/js/179.c6556c3e.js"><link rel="prefetch" href="/assets/js/18.364a1c7a.js"><link rel="prefetch" href="/assets/js/180.8f661fe6.js"><link rel="prefetch" href="/assets/js/19.1087666b.js"><link rel="prefetch" href="/assets/js/20.32414a86.js"><link rel="prefetch" href="/assets/js/21.df70e842.js"><link rel="prefetch" href="/assets/js/22.1a7bb308.js"><link rel="prefetch" href="/assets/js/23.cb78472b.js"><link rel="prefetch" href="/assets/js/24.50e9f515.js"><link rel="prefetch" href="/assets/js/25.46b3ab9e.js"><link rel="prefetch" href="/assets/js/26.a300c330.js"><link rel="prefetch" href="/assets/js/27.aa95a34a.js"><link rel="prefetch" href="/assets/js/28.1379fba5.js"><link rel="prefetch" href="/assets/js/29.ed2fd094.js"><link rel="prefetch" href="/assets/js/30.1cf5c075.js"><link rel="prefetch" href="/assets/js/31.707ee8c1.js"><link rel="prefetch" href="/assets/js/32.6cb23a99.js"><link rel="prefetch" href="/assets/js/33.f6aa3340.js"><link rel="prefetch" href="/assets/js/34.274ba06d.js"><link rel="prefetch" href="/assets/js/35.a4abf573.js"><link rel="prefetch" href="/assets/js/36.b0bb1a8c.js"><link rel="prefetch" href="/assets/js/37.a76af20e.js"><link rel="prefetch" href="/assets/js/38.9cfafe24.js"><link rel="prefetch" href="/assets/js/39.2cfff7e8.js"><link rel="prefetch" href="/assets/js/40.229f5d3d.js"><link rel="prefetch" href="/assets/js/41.f09ea6ba.js"><link rel="prefetch" href="/assets/js/42.b1c288ed.js"><link rel="prefetch" href="/assets/js/43.399440ed.js"><link rel="prefetch" href="/assets/js/44.2353b402.js"><link rel="prefetch" href="/assets/js/45.c46ff05f.js"><link rel="prefetch" href="/assets/js/46.acb62d8d.js"><link rel="prefetch" href="/assets/js/47.28fa9043.js"><link rel="prefetch" href="/assets/js/48.2e4aa712.js"><link rel="prefetch" href="/assets/js/49.c5b98afb.js"><link rel="prefetch" href="/assets/js/50.efed2333.js"><link rel="prefetch" href="/assets/js/51.d0145f09.js"><link rel="prefetch" href="/assets/js/52.51d6927e.js"><link rel="prefetch" href="/assets/js/53.1504af38.js"><link rel="prefetch" href="/assets/js/54.d4e577ae.js"><link rel="prefetch" href="/assets/js/55.1f9c27b0.js"><link rel="prefetch" href="/assets/js/56.8dd81906.js"><link rel="prefetch" href="/assets/js/57.235aa13f.js"><link rel="prefetch" href="/assets/js/58.86ab6cec.js"><link rel="prefetch" href="/assets/js/59.b35b7555.js"><link rel="prefetch" href="/assets/js/60.d23c6e8e.js"><link rel="prefetch" href="/assets/js/61.6ed29488.js"><link rel="prefetch" href="/assets/js/62.b06ce067.js"><link rel="prefetch" href="/assets/js/63.53c47f8c.js"><link rel="prefetch" href="/assets/js/64.a07662b1.js"><link rel="prefetch" href="/assets/js/65.666dc5d8.js"><link rel="prefetch" href="/assets/js/66.41eed6c1.js"><link rel="prefetch" href="/assets/js/67.0884e779.js"><link rel="prefetch" href="/assets/js/68.128f735a.js"><link rel="prefetch" href="/assets/js/69.09d1f95e.js"><link rel="prefetch" href="/assets/js/70.e94b7664.js"><link rel="prefetch" href="/assets/js/71.445a8fb0.js"><link rel="prefetch" href="/assets/js/72.f8d8cccd.js"><link rel="prefetch" href="/assets/js/74.a5352a2b.js"><link rel="prefetch" href="/assets/js/75.477396c4.js"><link rel="prefetch" href="/assets/js/76.98b2b77d.js"><link rel="prefetch" href="/assets/js/77.53678b71.js"><link rel="prefetch" href="/assets/js/78.14c0b510.js"><link rel="prefetch" href="/assets/js/79.9c97255b.js"><link rel="prefetch" href="/assets/js/80.ac99d13c.js"><link rel="prefetch" href="/assets/js/81.96d4efe5.js"><link rel="prefetch" href="/assets/js/82.9d7ee1d5.js"><link rel="prefetch" href="/assets/js/83.a396d08d.js"><link rel="prefetch" href="/assets/js/84.72e01c42.js"><link rel="prefetch" href="/assets/js/85.7548261b.js"><link rel="prefetch" href="/assets/js/86.bf4bb84b.js"><link rel="prefetch" href="/assets/js/87.94fd6a22.js"><link rel="prefetch" href="/assets/js/88.c9f369c3.js"><link rel="prefetch" href="/assets/js/89.3cae8c82.js"><link rel="prefetch" href="/assets/js/90.cda0ddf8.js"><link rel="prefetch" href="/assets/js/91.8596c56d.js"><link rel="prefetch" href="/assets/js/92.78612bf9.js"><link rel="prefetch" href="/assets/js/93.a5f9769b.js"><link rel="prefetch" href="/assets/js/94.65ab03b6.js"><link rel="prefetch" href="/assets/js/95.3bf11943.js"><link rel="prefetch" href="/assets/js/96.c6f01a4e.js"><link rel="prefetch" href="/assets/js/97.da276862.js"><link rel="prefetch" href="/assets/js/98.76da3e3c.js"><link rel="prefetch" href="/assets/js/99.653d9f9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eef050b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div itemscope="itemscope" itemtype="https://schema.org/WebPage" class="layout-main"><meta itemprop="name" content="MY TITLE"> <meta itemprop="alternateName" content="MY TITLE"> <meta itemprop="url" content="https://MY_DOMAIN.COM"> <nav aria-label="Navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" class="container nav-mobile" style="display:none;"><span itemprop="headline" class="nav-mobile__title">传送门</span> <ul class="nav-mobile__list"><li class="nav-mobile__item"><a href="/about/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">关于我</span></a></li><li class="nav-mobile__item"><a href="/categories/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">类别</span></a></li><li class="nav-mobile__item"><a href="/contact/" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">联系我</span></a></li><li class="nav-mobile__item"><a href="/categories/Agile_QA.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Agile QA</span></a></li><li class="nav-mobile__item"><a href="/categories/Quality.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Quality</span></a></li><li class="nav-mobile__item"><a href="/categories/automation_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">automation test</span></a></li><li class="nav-mobile__item"><a href="/categories/performance_test.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">performance test</span></a></li><li class="nav-mobile__item"><a href="/categories/vuejs.html" itemprop="url" class="nav-mobile__link"><span class="bullet no_bw bullet--primary bullet--undefined"></span> <span class="text">Vue.js</span></a></li></ul></nav> <div class="container-fluid wrapper-body__nm"><header itemscope="itemscope" itemtype="https://schema.org/Organization" class="header"><!----> <div class="row header-top"><div class="column xs-33 sm-20"><div class="hamburguer header-top__hamburguer"><div class="hamburguer__wrapper"><span class="hamburguer__line"></span> <span class="hamburguer__line"></span> <span class="hamburguer__line"></span></div></div> <!----></div> <div class="column xs-33 sm-60"><div class="header__logo"><a href="/" itemprop="url" class="header-top-logo__link router-link-active"><img itemprop="logo" src="/ktquez-play-logo.png" srcset="/ktquez-play-logo.png 1x, /ktquez-play-logo@2x.png 2x" alt="Logo in 3 colors in play format"></a></div> <meta itemprop="name" content="MY TITLE"> <meta itemprop="sameAs" content="https://www.github.com/qileilove"></div> <div class="column xs-33 sm-20"><div class="search header-top__search"><!----> <span class="icon search__icon">search</span></div> <div class="switch-bw header-top__toggle"><span class="switch-bw__text">
+    打开黑夜模式，体验黑夜的魅力
+  </span> <label for="switch-bw" class="switch-bw__label"><input type="checkbox" id="switch-bw" name="switch-bw" aria-labelledby="switch-bw-text" class="switch-bw__input"> <span class="switch-bw__ball"></span> <span id="switch-bw-text" hidden="hidden">switch to black or white</span></label></div></div></div></header> <main id="main" itemscope="itemscope" itemtype="https://schema.org/Blog" class="main-page"><div><a href="#main" class="vue-skip-to">跳过主内容</a> <div><div class="page page__full row justify-right"><article itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting" class="column xs-100 page__full__box box-default"><meta itemprop="mainEntityOfPage" content="/posts/202012/%E4%BD%BF%E7%94%A8Nock%E8%BF%9B%E8%A1%8C%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E6%A8%A1%E6%8B%9F%E4%BE%9D%E8%B5%96%E9%A1%B9.html"> <header class="page-header page__full-header"><button type="button" class="ui-button reset-button back-button"><span class="icon back-button__icon icon--arrow">arrow</span> <span class="back-button__text">返回</span></button> <div class="page-header__meta"><time datetime="Sun Dec 13 2020 09:00:00 GMT+0800 (China Standard Time)" itemprop="datePublished" class="text">
+                
+            </time> <meta itemprop="dateModified" content="currentPost.updated_at"> <!----></div> <h1 itemprop="name headline" class="page-header__title">使用Nock进行集成测试中的模拟依赖项</h1> <div class="page-header-cat"><nav class="page-header-cat__nav"><ul class="page-header-cat__list"><li class="page-header-cat__item"><a href="/categories/Agile_QA.html" itemprop="keywords" class="page-header-cat__link meta-text">
+                  Agile QA
+                </a></li></ul></nav></div> <!----></header> <div itemprop="image" itemscope="itemscope" itemtype="https://schema.org/ImageObject" class="post-cover"><picture> <img itemprop="url" src="/images/posts/2020/12/B9.png" class="post-cover__image cover"></picture></div> <!----> <section class="page-content page__full-content"><div class="row"><div class="column no-pad-l sm-50 post-share"><div class="observer"><!----> <!----> <!----></div></div> <!----></div> <div class="row"><div class="column no-pad-l md-75 xl-67 post-content"><div class="post-content__box-player"><!----></div> <div class="post-content__excerpt"><!----></div> <div class="post-content__table-contents"><div class="table-contents"><h3 id="table-of-content" class="table-contents__title">文本</h3> <nav><ol class="table-contents__list"><!----><!----><!----><!----></ol></nav></div></div> <div itemprop="articleBody"><div class="content custom"><h1 id="使用nock进行集成测试中的模拟依赖项"><a href="#使用nock进行集成测试中的模拟依赖项" aria-hidden="true" class="header-anchor">#</a> 使用Nock进行集成测试中的模拟依赖项</h1> <p>软件行业正朝着集成测试的方向发展，以测试其提供代码信心的能力。然而，它们的设置是冗长乏味的，而且其目的的一个基本部分的外部影响会降低性能和信任度。在使用nock进行集成测试时模拟第三方依赖关系有助于降低复杂性，提高一致性和可靠性。
+软件行业因其提供代码置信度的能力而趋向于集成测试。 但是，他们的工作乏味，而且外部影响（其目标的基本组成部分）会降低绩效和信任度。 使用nock模拟集成测试中的第三方依赖项有助于降低复杂性并提高一致性和可靠性。
+与Nock的集成测试
+Nock是一个JavaScript库，可模拟外部API请求。 该库对于集成测试非常强大，因为它与内部实现无关。 API发出的请求不是内部详细信息的一部分，而是合同。
+例
+下图是TODO API的人为示例，该API创建一个事件以安排提醒。</p> <p><img src="https://blog.testproject.io/wp-content/uploads/2020/11/todo-architecture.png" alt></p> <p>客户端调用todo API，该API插入todo数据库。 副作用是，事件API将提醒插入事件数据库中。
+开发人员无需查看代码即可为该体系结构编写测试。 通过使用测试驱动的开发，他们可以测试行为，而不是不重要的实现细节。 这与打算使用库的方式紧密一致</p> <div class="language- extra-class"><pre class="language-text"><code>it(&quot;creates a todo&quot;, async function () {
+  const response = await request(app)
+    .post(&quot;/v1/todo&quot;)
+    .set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+    .set(&quot;Accept&quot;, &quot;application/json&quot;)
+    .send({
+      title: &quot;Make resolutions&quot;,
+      reminder: null,
+    });
+
+  expect(response.status).to.equal(201);
+  expect(response.body.id).to.be.a.uuid(&quot;v4&quot;);
+  // Additional assertions
+});	
+
+</code></pre></div><p>此测试未使用nock，以证明它可能不适用于任何地方。 尽管测试依赖于活动数据库，但在本地或作为CI管道的一部分启动Docker容器很简单。 尽管我们可以模拟数据库交互，但弊大于利。 流行数据库的开发人员将依赖项打包在维护良好且稳定的Docker容器中。 模拟他们的所有交互将是乏味的，并且可能掩盖致命的错误。
+下一个测试涉及与外部API的交互：</p> <div class="language- extra-class"><pre class="language-text"><code>it(&quot;creates a reminder&quot;, async function () {
+  let eventApiCalled = false;
+
+  nock(&quot;https://events-api:3000&quot;)
+    .post(&quot;/v1/reminder&quot;)
+    .reply(201, (uri, requestBody) =&gt; {
+      eventApiCalled = true;
+      return { id: &quot;some-uuid&quot;, other: &quot;attribute&quot; };
+    });
+
+  const response = await request(app)
+    .post(&quot;/v1/todo&quot;)
+    .set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+    .set(&quot;Accept&quot;, &quot;application/json&quot;)
+    .send({
+      title: &quot;Make resolutions&quot;,
+      reminder: {
+        date: &quot;2020-01-01T00:00:00Z&quot;,
+      },
+    });
+
+  expect(response.status).to.equal(201);
+  expect(eventApiCalled).to.be.true();
+});
+
+</code></pre></div><p>在这种情况下，todo API和事件API之间的协定是已知的。 模拟是有意义的，因为事件API可以针对相同的合同拥有自己的一组测试。
+通过使用nock模拟，可以将事件API与todo API分离。 有些人可能不认为这是一个真正的集成测试，但是包含一个真正的连接会带来一些缺点。
+真正的HTTP连接的缺点
+开发人员需要在本地运行外部API，并将其作为CI管道的一部分
+这会很快失去控制。 事件API可能依赖于其他五个服务，而这些服务可能依赖于其他十个服务。 如果这些服务不是可选的，则安装程序中还需要包括每个服务。
+依赖关系将todo API耦合到事件API架构
+为了正确运行事件API，根据示例图，必须包括本地数据库。 其他必需的组件，例如Redis缓存或外部日志记录系统，也可以存在。 如果事件API的维护者决定将数据库从MySQL交换到Postgres，则todo API的CI管道将中断。 测试会产生假阴性结果，并且不能反映现实情况：todo API可以在交换的数据库中正常运行。
+延迟增加了测试时间
+通过调出真实的API（尤其是速度较慢的API），每次测试花费的时间会稍长一些。 尽管在一些测试中这似乎是微不足道的，但延迟可能会在产品的使用寿命内累积。
+模拟连接的缺点
+待办事项API必须信任事件API才能不违反合同
+Pact JS之类的框架可以帮助内部API解决此问题，但不能解决第三方问题。 在本文中，我故意不关注Pact，因为许多开发人员很难获得支持和支持。
+💡有关Pact的更多信息，我建议您浏览这份详尽的《消费者合同测试指南》。
+其他提示和技巧
+测试消耗了堆栈中的所有Nocks
+如果测试两次调用API，则nock仅对第一次调用有效。 要绕过此行为，可以使用持久性声明它们：</p> <div class="language- extra-class"><pre class="language-text"><code>nock(&quot;https://event-api:3000&quot;)
+  .post(&quot;/v1/events&quot;)
+  .reply(201, function () {
+    // Create and return event
+  })
+  .persist()	
+</code></pre></div><p>但是，默认行为对于公开意外调用很有用。如果排除了persist选项，那么创建两个事件将使测试失败。</p> <div class="language- extra-class"><pre class="language-text"><code>nock(/.*amazon.com.*/)
+  .put(/s3/)
+  .reply(200, {...}
+</code></pre></div><p>这可以帮助克服带有UUID的网址。
+Nock完全匹配网址而不使用正则表达式，并且任何不匹配的调用都将无法处理并引发错误。
+查询参数旁路</p> <div class="language- extra-class"><pre class="language-text"><code>nock(&quot;https://events-api:3000&quot;)
+  .get(&quot;/v1/events&quot;)
+  .query(true)
+
+</code></pre></div><p>忽略查询参数可以提供一种方法来返回相同的数据，而不管参数是什么。应答错误</p> <div class="language- extra-class"><pre class="language-text"><code>nock(&quot;https://events-api:3000&quot;)
+  .post(&quot;/v1/reminder&quot;)
+  .reply(500, &quot;...&quot;)
+</code></pre></div><p>这是模拟的另一个优点。 考虑todo API示例：如果创建提醒的调用失败，则它应回滚创建todo的事务并返回500错误。 在真实世界的连接中，除了关闭服务之外，可能很难找到一种自然的方法来使事件API失败。
+该库提供了更多实用程序，在文档中提到了这些实用程序：https://github.com/nock/nock。
+结论
+Nock更改了集成测试，以减少对实际连接性的关注，而将更多精力放在遵守合同上。 通过模拟API层，我们可以控制与第三方服务的交互，即使它们在公司内部也是如此。 使用nock编写集成测试可以显着提高速度和测试可靠性，但必须以信任合同为代价。</p> <h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3> <p>石头 磊哥 seven 随便叫</p> <h3 id="company"><a href="#company" aria-hidden="true" class="header-anchor">#</a> company</h3> <p>thoughtworks（离职了。。。。）</p> <p>大家好，本人不才，目前依旧混迹于thoughtworks，做着一名看起来像全栈的QA，兴趣爱好前端，目前是thoughtworks 西安QA社区的leader，如果有兴趣分享话题，或者想加入tw，可以找我</p> <h3 id="roles"><a href="#roles" aria-hidden="true" class="header-anchor">#</a> roles</h3> <p>QA（营生） dev（front-end dev 兴趣爱好）</p> <h3 id="联系方式"><a href="#联系方式" aria-hidden="true" class="header-anchor">#</a> 联系方式</h3> <p>如果想转载或者高薪挖我 请直接联系我 哈哈</p> <h4 id="wechat"><a href="#wechat" aria-hidden="true" class="header-anchor">#</a> wechat:</h4> <p>qileiwangnan</p> <h4 id="email"><a href="#email" aria-hidden="true" class="header-anchor">#</a> email:</h4> <p>qileilove@gmail.com</p></div></div></div> <div class="column no-pad-r sm-25 xl-33 xsNone smNone post-sidebar"><div class="bizu box-default post-sidebar__bizu bizu--vertical"><div class="bizu-image"><span class="bizu-close">×</span> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener"><img src="/general/web-development.png" alt="Illustration of a user studying online" class="bizu-image__image"></a></div> <div class="bizu-info"><a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__text">
+      The most complete course of Vue.js from Udemy, including Vuex and Vue-router with a promotional price not to be missed.
+    </a> <a href="YOUR_AFFILIATE_LINK" target="_blank" rel="nofollow noopener" class="bizu-info__link bizu-info__by">
+      udemy.com
+    </a></div></div></div> <aside class="column xs-100"><hr class="divider"> <div><div class="observer"><!----> <!----> <!----></div></div> <hr class="divider"> <section class="post-content__disqus"><h3>想给我说点什么</h3> <!----></section></aside></div></section></article></div> <!----> <aside class="container main"></aside></div> <!----> <div class="elevator"><a class="elevator__link"><span class="icon elevator__icon">greaterthan</span></a></div> <!----></div></main> <footer class="footer"><div class="footer-box1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 161" class="footer-box__shape"><path d="M-11.925-4809v-154.746c40.454,19.75,273.683,130.936,420.544,142.612,161.25,12.821,339.978-42.709,521.543-86.3,169.82-40.769,395.43,29.2,423.912,38.429v60Z" transform="translate(11.926 4970)"></path></svg></div> <div class="footer-box2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 246" class="footer-box__shape"><path d="M-1505.5-4725.5v-238.1c8.149-3.133,18.138-5.059,29.672-5.9h30.954c201.21,11.667,696.6,224.535,855.572,236.458,205.129,15.385,287.179-164.1,432.047-175.625a42.381,42.381,0,0,1,16.756,1.857V-4725.5Z" transform="translate(1506 4971)"></path></svg> <ul class="footer-social__list"><li class="footer-social__item"><a href="https://www.github.com/qileilove" target="_blank" rel="noopener external" title="Follow us on Facebook"><span class="icon footer-social__icon">github</span></a></li></ul> <div class="footer-newsletter"><!----></div></div> <section class="footer-box3"><div class="row"><div class="column sm-50 footer-card"><div class="observer"><div class="spinner observer__spinner"><div class="double-bounce1"></div> <div class="double-bounce2"></div></div> <!----> <!----></div></div> <div class="column sm-50 footer-nav"><div class="row justify-right"><div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--1"><h2 class="meta-text title">Qi Lei的blog</h2> <nav class="footer-nav1"><ul><li class="footer-nav1__item"><a href="/about/">关于我</a> <!----></li><li class="footer-nav1__item"><a href="/categories/">类别</a> <!----></li><li class="footer-nav1__item"><a href="/contact/">联系我</a> <!----></li></ul></nav></div> <div class="column xs-50 sm-40 md-33 footer-nav__box footer-nav__box--2"><h2 class="meta-text title">社交群</h2> <nav class="footer-nav2"><ul><li class="footer-nav2__item"><!----> <!----></li></ul></nav></div></div></div> <div class="column sm-100 footer-copy">2019 © Qi Lei - 
+        <a href="https://vuepress.vuejs.org/" rel="noopener" target="_blank">
+          MADE WITH VUEPRESS
+        </a></div></div> <span class="shapes shapes--circle" style="left: 3%; top: -20%"></span> <span class="shapes shapes--primary shapes--color3" style="left: 30%; top: -15%"></span> <span class="shapes shapes--primary" style="left: 13%; top: -80%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle shapes--color4" style="left: 40%; top: 200px"></span> <span class="shapes shapes--primary" style="left: 15%; bottom: 10%; transform: rotate(75deg)"></span> <span class="shapes shapes--circle shapes--color3" style="right: 50%; top: 30%"></span> <span class="shapes shapes--primary" style="right: 20%; top: -100%"></span> <span class="shapes shapes--circle" style="right: 10%; top: -20%"></span> <span class="shapes shapes--color4" style="right: 35%; top: -20%; transform: rotate(45deg)"></span> <span class="shapes shapes--circle" style="left: 40%; top: -50%"></span> <span class="shapes shapes--color3" style="right: 30%; top: 20%"></span> <span class="shapes shapes--circle shapes--primary" style="right: 30%; bottom: 20%"></span></section></footer></div> <!----> <!----></div></div>
+    <script src="/assets/js/app.152cc865.js" defer></script><script src="/assets/js/12.22dc2157.js" defer></script><script src="/assets/js/3.72f65101.js" defer></script><script src="/assets/js/11.9ce5aa47.js" defer></script><script src="/assets/js/10.48854263.js" defer></script><script src="/assets/js/15.f87ba54c.js" defer></script><script src="/assets/js/2.8ffb7ac8.js" defer></script><script src="/assets/js/5.69a15828.js" defer></script><script src="/assets/js/6.ca7c455c.js" defer></script><script src="/assets/js/16.7d53733f.js" defer></script><script src="/assets/js/73.85b678ef.js" defer></script><script src="/assets/js/7.cc0a13af.js" defer></script><script src="/assets/js/9.bc7d0b68.js" defer></script><script src="/assets/js/13.949cbefc.js" defer></script><script src="/assets/js/4.98ee0f72.js" defer></script>
+  </body>
+</html>
